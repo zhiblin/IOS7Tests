@@ -8,6 +8,7 @@
 
 #import "TestSwipeToPopOne.h"
 #import "TestSwipeToPopTwo.h"
+#import "Setting.h"
 
 @interface TestSwipeToPopOne ()
 
@@ -27,6 +28,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    Setting *set = [[Setting alloc] initWithFrame:self.view.bounds];
+    [self.view addSubview:set];
     UIButton *push = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     push.frame  = CGRectMake(100, 200, 100, 80);
     [push setTitle:[NSString stringWithFormat:@"push"] forState:UIControlStateNormal];

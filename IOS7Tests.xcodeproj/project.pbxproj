@@ -14,24 +14,11 @@
 		02EACA34183EFC8500780D06 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 02EACA33183EFC8500780D06 /* main.m */; };
 		02EACA38183EFC8500780D06 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 02EACA37183EFC8500780D06 /* AppDelegate.m */; };
 		02EACA3A183EFC8500780D06 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02EACA39183EFC8500780D06 /* Images.xcassets */; };
-		02EACA41183EFC8500780D06 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02EACA40183EFC8500780D06 /* XCTest.framework */; };
-		02EACA42183EFC8500780D06 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02EACA27183EFC8500780D06 /* Foundation.framework */; };
-		02EACA43183EFC8500780D06 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02EACA2B183EFC8500780D06 /* UIKit.framework */; };
-		02EACA4B183EFC8500780D06 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 02EACA49183EFC8500780D06 /* InfoPlist.strings */; };
-		02EACA4D183EFC8500780D06 /* IOS7TestsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 02EACA4C183EFC8500780D06 /* IOS7TestsTests.m */; };
 		02EACA5E183F00B300780D06 /* TestSwipeToPopOne.m in Sources */ = {isa = PBXBuildFile; fileRef = 02EACA5D183F00B300780D06 /* TestSwipeToPopOne.m */; };
 		02EACA61183F014100780D06 /* TestSwipeToPopTwo.m in Sources */ = {isa = PBXBuildFile; fileRef = 02EACA60183F014100780D06 /* TestSwipeToPopTwo.m */; };
+		3CDECEA963AD8AE544A6038F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BEF077E5FB6006EC409E7894 /* libPods.a */; };
+		8426F0AA1A888A6800853F61 /* Setting.m in Sources */ = {isa = PBXBuildFile; fileRef = 8426F0A91A888A6800853F61 /* Setting.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		02EACA44183EFC8500780D06 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 02EACA1C183EFC8500780D06 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 02EACA23183EFC8500780D06;
-			remoteInfo = IOS7Tests;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		02EACA24183EFC8500780D06 /* IOS7Tests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOS7Tests.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,7 +32,6 @@
 		02EACA36183EFC8500780D06 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		02EACA37183EFC8500780D06 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		02EACA39183EFC8500780D06 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		02EACA3F183EFC8500780D06 /* IOS7TestsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IOS7TestsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		02EACA40183EFC8500780D06 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		02EACA48183EFC8500780D06 /* IOS7TestsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IOS7TestsTests-Info.plist"; sourceTree = "<group>"; };
 		02EACA4A183EFC8500780D06 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -54,6 +40,11 @@
 		02EACA5D183F00B300780D06 /* TestSwipeToPopOne.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestSwipeToPopOne.m; sourceTree = "<group>"; };
 		02EACA5F183F014100780D06 /* TestSwipeToPopTwo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestSwipeToPopTwo.h; sourceTree = "<group>"; };
 		02EACA60183F014100780D06 /* TestSwipeToPopTwo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestSwipeToPopTwo.m; sourceTree = "<group>"; };
+		8426F0A81A888A6800853F61 /* Setting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Setting.h; sourceTree = "<group>"; };
+		8426F0A91A888A6800853F61 /* Setting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Setting.m; sourceTree = "<group>"; };
+		9E5906AB5C8C85374ADD9701 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		BEF077E5FB6006EC409E7894 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0E48BA6D0057B0DD3A81A35 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,16 +55,7 @@
 				02EACA2A183EFC8500780D06 /* CoreGraphics.framework in Frameworks */,
 				02EACA2C183EFC8500780D06 /* UIKit.framework in Frameworks */,
 				02EACA28183EFC8500780D06 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		02EACA3C183EFC8500780D06 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				02EACA41183EFC8500780D06 /* XCTest.framework in Frameworks */,
-				02EACA43183EFC8500780D06 /* UIKit.framework in Frameworks */,
-				02EACA42183EFC8500780D06 /* Foundation.framework in Frameworks */,
+				3CDECEA963AD8AE544A6038F /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +69,7 @@
 				02EACA46183EFC8500780D06 /* IOS7TestsTests */,
 				02EACA26183EFC8500780D06 /* Frameworks */,
 				02EACA25183EFC8500780D06 /* Products */,
+				9CB9FB3EC67903B797DC1850 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,7 +77,6 @@
 			isa = PBXGroup;
 			children = (
 				02EACA24183EFC8500780D06 /* IOS7Tests.app */,
-				02EACA3F183EFC8500780D06 /* IOS7TestsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -106,6 +88,7 @@
 				02EACA29183EFC8500780D06 /* CoreGraphics.framework */,
 				02EACA2B183EFC8500780D06 /* UIKit.framework */,
 				02EACA40183EFC8500780D06 /* XCTest.framework */,
+				BEF077E5FB6006EC409E7894 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -115,6 +98,8 @@
 			children = (
 				02EACA36183EFC8500780D06 /* AppDelegate.h */,
 				02EACA37183EFC8500780D06 /* AppDelegate.m */,
+				8426F0A81A888A6800853F61 /* Setting.h */,
+				8426F0A91A888A6800853F61 /* Setting.m */,
 				02EACA5C183F00B300780D06 /* TestSwipeToPopOne.h */,
 				02EACA5D183F00B300780D06 /* TestSwipeToPopOne.m */,
 				02EACA5F183F014100780D06 /* TestSwipeToPopTwo.h */,
@@ -154,6 +139,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		9CB9FB3EC67903B797DC1850 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9E5906AB5C8C85374ADD9701 /* Pods.debug.xcconfig */,
+				C0E48BA6D0057B0DD3A81A35 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -161,9 +155,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 02EACA50183EFC8500780D06 /* Build configuration list for PBXNativeTarget "IOS7Tests" */;
 			buildPhases = (
+				3E641755D8D005A00FFC6D9D /* Check Pods Manifest.lock */,
 				02EACA20183EFC8500780D06 /* Sources */,
 				02EACA21183EFC8500780D06 /* Frameworks */,
 				02EACA22183EFC8500780D06 /* Resources */,
+				FA2AC9E756B4B4037B5A5E72 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -174,24 +170,6 @@
 			productReference = 02EACA24183EFC8500780D06 /* IOS7Tests.app */;
 			productType = "com.apple.product-type.application";
 		};
-		02EACA3E183EFC8500780D06 /* IOS7TestsTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 02EACA53183EFC8500780D06 /* Build configuration list for PBXNativeTarget "IOS7TestsTests" */;
-			buildPhases = (
-				02EACA3B183EFC8500780D06 /* Sources */,
-				02EACA3C183EFC8500780D06 /* Frameworks */,
-				02EACA3D183EFC8500780D06 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				02EACA45183EFC8500780D06 /* PBXTargetDependency */,
-			);
-			name = IOS7TestsTests;
-			productName = IOS7TestsTests;
-			productReference = 02EACA3F183EFC8500780D06 /* IOS7TestsTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -200,11 +178,6 @@
 			attributes = {
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = pipaw;
-				TargetAttributes = {
-					02EACA3E183EFC8500780D06 = {
-						TestTargetID = 02EACA23183EFC8500780D06;
-					};
-				};
 			};
 			buildConfigurationList = 02EACA1F183EFC8500780D06 /* Build configuration list for PBXProject "IOS7Tests" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -219,7 +192,6 @@
 			projectRoot = "";
 			targets = (
 				02EACA23183EFC8500780D06 /* IOS7Tests */,
-				02EACA3E183EFC8500780D06 /* IOS7TestsTests */,
 			);
 		};
 /* End PBXProject section */
@@ -234,15 +206,40 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		02EACA3D183EFC8500780D06 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3E641755D8D005A00FFC6D9D /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				02EACA4B183EFC8500780D06 /* InfoPlist.strings in Resources */,
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
 		};
-/* End PBXResourcesBuildPhase section */
+		FA2AC9E756B4B4037B5A5E72 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		02EACA20183EFC8500780D06 /* Sources */ = {
@@ -252,27 +249,12 @@
 				02EACA38183EFC8500780D06 /* AppDelegate.m in Sources */,
 				02EACA5E183F00B300780D06 /* TestSwipeToPopOne.m in Sources */,
 				02EACA61183F014100780D06 /* TestSwipeToPopTwo.m in Sources */,
+				8426F0AA1A888A6800853F61 /* Setting.m in Sources */,
 				02EACA34183EFC8500780D06 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		02EACA3B183EFC8500780D06 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				02EACA4D183EFC8500780D06 /* IOS7TestsTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		02EACA45183EFC8500780D06 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 02EACA23183EFC8500780D06 /* IOS7Tests */;
-			targetProxy = 02EACA44183EFC8500780D06 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		02EACA30183EFC8500780D06 /* InfoPlist.strings */ = {
@@ -368,6 +350,7 @@
 		};
 		02EACA51183EFC8500780D06 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E5906AB5C8C85374ADD9701 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -381,6 +364,7 @@
 		};
 		02EACA52183EFC8500780D06 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0E48BA6D0057B0DD3A81A35 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -389,48 +373,6 @@
 				INFOPLIST_FILE = "IOS7Tests/IOS7Tests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		02EACA54183EFC8500780D06 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/IOS7Tests.app/IOS7Tests";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "IOS7Tests/IOS7Tests-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "IOS7TestsTests/IOS7TestsTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		02EACA55183EFC8500780D06 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/IOS7Tests.app/IOS7Tests";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "IOS7Tests/IOS7Tests-Prefix.pch";
-				INFOPLIST_FILE = "IOS7TestsTests/IOS7TestsTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
 		};
@@ -453,14 +395,7 @@
 				02EACA52183EFC8500780D06 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		02EACA53183EFC8500780D06 /* Build configuration list for PBXNativeTarget "IOS7TestsTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				02EACA54183EFC8500780D06 /* Debug */,
-				02EACA55183EFC8500780D06 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

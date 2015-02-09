@@ -18,6 +18,7 @@
     self.window.backgroundColor = [UIColor whiteColor];
     TestSwipeToPopOne *tstp = [[TestSwipeToPopOne alloc] init];
     UINavigationController *main = [[UINavigationController alloc] initWithRootViewController:tstp];
+    main.navigationBarHidden = YES;
     self.window.rootViewController = main;
     
     [self.window makeKeyAndVisible];
