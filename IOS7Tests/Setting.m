@@ -118,6 +118,21 @@
 //    }];
 //    [self.cameraswitch updateConstraintsIfNeeded];
 //    [self.cameraswitch updateConstraints];
+    
+    POPAnimatableProperty *constantProperty = [POPAnimatableProperty propertyWithName:@"constant" initializer:^(POPMutableAnimatableProperty *prop){
+        prop.readBlock = ^(NSLayoutConstraint *layoutConstraint, CGFloat values[]) {
+            values[0] = [layoutConstraint constant];
+        };
+        prop.writeBlock = ^(NSLayoutConstraint *layoutConstraint, const CGFloat values[]) {
+            [layoutConstraint setConstant:values[0]];
+        };
+    }];
+    
+    POPSpringAnimation *constantAnimation = [POPSpringAnimation animation];
+    constantAnimation.property = [POPAnimatableProperty mas_offsetProperty];
+//    constantAnimation.fromValue = @(_layoutConstraint.constant);
+    constantAnimation.toValue = @(200);
+    [self.cameraswitchConstraint pop_addAnimation:constantAnimation forKey:@"constantAnimation"];
 }
 
 /*
