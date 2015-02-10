@@ -18,6 +18,7 @@
 		02EACA61183F014100780D06 /* TestSwipeToPopTwo.m in Sources */ = {isa = PBXBuildFile; fileRef = 02EACA60183F014100780D06 /* TestSwipeToPopTwo.m */; };
 		3CDECEA963AD8AE544A6038F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BEF077E5FB6006EC409E7894 /* libPods.a */; };
 		8426F0AA1A888A6800853F61 /* Setting.m in Sources */ = {isa = PBXBuildFile; fileRef = 8426F0A91A888A6800853F61 /* Setting.m */; };
+		84BB73081A89ADC000D1DC66 /* POPAnimatableProperty+Masonry.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BB73071A89ADC000D1DC66 /* POPAnimatableProperty+Masonry.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,9 @@
 		02EACA60183F014100780D06 /* TestSwipeToPopTwo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestSwipeToPopTwo.m; sourceTree = "<group>"; };
 		8426F0A81A888A6800853F61 /* Setting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Setting.h; sourceTree = "<group>"; };
 		8426F0A91A888A6800853F61 /* Setting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Setting.m; sourceTree = "<group>"; };
+		84BB73051A89ADC000D1DC66 /* MSSPopMasonry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSSPopMasonry.h; sourceTree = "<group>"; };
+		84BB73061A89ADC000D1DC66 /* POPAnimatableProperty+Masonry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "POPAnimatableProperty+Masonry.h"; sourceTree = "<group>"; };
+		84BB73071A89ADC000D1DC66 /* POPAnimatableProperty+Masonry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "POPAnimatableProperty+Masonry.m"; sourceTree = "<group>"; };
 		9E5906AB5C8C85374ADD9701 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		BEF077E5FB6006EC409E7894 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0E48BA6D0057B0DD3A81A35 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -96,6 +100,9 @@
 		02EACA2D183EFC8500780D06 /* IOS7Tests */ = {
 			isa = PBXGroup;
 			children = (
+				84BB73051A89ADC000D1DC66 /* MSSPopMasonry.h */,
+				84BB73061A89ADC000D1DC66 /* POPAnimatableProperty+Masonry.h */,
+				84BB73071A89ADC000D1DC66 /* POPAnimatableProperty+Masonry.m */,
 				02EACA36183EFC8500780D06 /* AppDelegate.h */,
 				02EACA37183EFC8500780D06 /* AppDelegate.m */,
 				8426F0A81A888A6800853F61 /* Setting.h */,
@@ -248,6 +255,7 @@
 			files = (
 				02EACA38183EFC8500780D06 /* AppDelegate.m in Sources */,
 				02EACA5E183F00B300780D06 /* TestSwipeToPopOne.m in Sources */,
+				84BB73081A89ADC000D1DC66 /* POPAnimatableProperty+Masonry.m in Sources */,
 				02EACA61183F014100780D06 /* TestSwipeToPopTwo.m in Sources */,
 				8426F0AA1A888A6800853F61 /* Setting.m in Sources */,
 				02EACA34183EFC8500780D06 /* main.m in Sources */,

@@ -7,6 +7,7 @@
 //
 
 #import "Setting.h"
+#import "MSSPopMasonry.h"
 
 @implementation Setting
 
@@ -82,7 +83,7 @@
     [self.cameraswitch mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.mas_equalTo(0.0);
         make.size.mas_equalTo(CGSizeMake(40.0, 40.0));
-        make.right.mas_equalTo(self.setting.mas_left).with.offset(-23.0);
+        self.cameraswitchConstraint = make.right.mas_equalTo(self.setting.mas_left).with.offset(-23.0);
     }];
     
     [self.exposure mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -91,6 +92,34 @@
         make.right.mas_equalTo(self.cameraswitch.mas_left).with.offset(-23.0);
     }];
 }
+
+-(void)dosetting{
+    
+//    [self.cameraswitch mas_updateConstraints:^(MASConstraintMaker *make) {
+//        
+//        make.right.mas_equalTo(self.setting.mas_left).with.offset(230.0);
+//        
+//    }];
+    
+    
+    POPSpringAnimation *leftSideAnimation = [POPSpringAnimation new];
+    leftSideAnimation.toValue = @(-150);
+    leftSideAnimation.property = [POPAnimatableProperty mas_offsetProperty];
+    leftSideAnimation.springBounciness = 16;
+    leftSideAnimation.springSpeed = 6;
+    
+    [self.cameraswitchConstraint pop_addAnimation:leftSideAnimation forKey:@"offset"];
+    
+//    [UIView animateWithDuration:1 animations:^{
+//        [self layoutIfNeeded];
+//    } completion:^(BOOL finished) {
+        //repeat!
+//        [self animateWithInvertedInsets:!invertedInsets];
+//    }];
+//    [self.cameraswitch updateConstraintsIfNeeded];
+//    [self.cameraswitch updateConstraints];
+}
+
 /*
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.
