@@ -29,6 +29,17 @@
 {
     [super viewDidLoad];
     Setting *set = [[Setting alloc] initWithFrame:self.view.bounds];
+    set.doSettingBlock = ^(){
+        
+        NSLog(@"setting");
+        _countdownView = [[CameraCountdownView alloc] initWithFrame:self.view.bounds andSeconds:3.0f];
+        _countdownView.userInteractionEnabled = NO;
+        [_countdownView setDelegate:self];
+        [self.view addSubview:_countdownView];
+        _countdownView.userInteractionEnabled = YES;
+        [_countdownView startCountdownTimer];
+        
+    };
     [self.view addSubview:set];
     UIButton *push = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     push.frame  = CGRectMake(100, 200, 100, 80);
@@ -37,8 +48,19 @@
     [push addTarget:self action:@selector(pushtonextview) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:push];
     
+    
+    
+    
 }
 
+- (void)cameraCountdownViewDidCompleted{
+ 
+    if (_countdownView) {
+        [_countdownView removeFromSuperview];
+        _countdownView = nil;
+    }
+    
+}
 
 -(void)pushtonextview{
     

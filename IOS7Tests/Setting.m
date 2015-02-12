@@ -91,10 +91,14 @@
         make.size.mas_equalTo(CGSizeMake(40.0, 40.0));
         make.right.mas_equalTo(self.cameraswitch.mas_left).with.offset(-23.0);
     }];
+   
 }
 
 -(void)dosetting{
     
+    if (self.doSettingBlock) {
+        self.doSettingBlock();
+    }
 //    [self.cameraswitch mas_updateConstraints:^(MASConstraintMaker *make) {
 //        
 //        make.right.mas_equalTo(self.setting.mas_left).with.offset(230.0);

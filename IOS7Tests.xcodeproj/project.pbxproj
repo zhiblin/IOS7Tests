@@ -18,6 +18,13 @@
 		02EACA61183F014100780D06 /* TestSwipeToPopTwo.m in Sources */ = {isa = PBXBuildFile; fileRef = 02EACA60183F014100780D06 /* TestSwipeToPopTwo.m */; };
 		3CDECEA963AD8AE544A6038F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BEF077E5FB6006EC409E7894 /* libPods.a */; };
 		8426F0AA1A888A6800853F61 /* Setting.m in Sources */ = {isa = PBXBuildFile; fileRef = 8426F0A91A888A6800853F61 /* Setting.m */; };
+		849E06441A8CB2D90012CBE6 /* CameraCountdownView.m in Sources */ = {isa = PBXBuildFile; fileRef = 849E06431A8CB2D90012CBE6 /* CameraCountdownView.m */; };
+		849E06461A8CB68B0012CBE6 /* 倒计时plus1.png in Resources */ = {isa = PBXBuildFile; fileRef = 849E06451A8CB68B0012CBE6 /* 倒计时plus1.png */; };
+		849E06481A8CB6990012CBE6 /* 倒计时1.png in Resources */ = {isa = PBXBuildFile; fileRef = 849E06471A8CB6990012CBE6 /* 倒计时1.png */; };
+		849E064B1A8CB6A10012CBE6 /* 倒计时2.png in Resources */ = {isa = PBXBuildFile; fileRef = 849E06491A8CB6A10012CBE6 /* 倒计时2.png */; };
+		849E064C1A8CB6A10012CBE6 /* 倒计时plus2.png in Resources */ = {isa = PBXBuildFile; fileRef = 849E064A1A8CB6A10012CBE6 /* 倒计时plus2.png */; };
+		849E064F1A8CB6A70012CBE6 /* 倒计时3.png in Resources */ = {isa = PBXBuildFile; fileRef = 849E064D1A8CB6A70012CBE6 /* 倒计时3.png */; };
+		849E06501A8CB6A70012CBE6 /* 倒计时plus3.png in Resources */ = {isa = PBXBuildFile; fileRef = 849E064E1A8CB6A70012CBE6 /* 倒计时plus3.png */; };
 		84BB73081A89ADC000D1DC66 /* POPAnimatableProperty+Masonry.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BB73071A89ADC000D1DC66 /* POPAnimatableProperty+Masonry.m */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +50,14 @@
 		02EACA60183F014100780D06 /* TestSwipeToPopTwo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestSwipeToPopTwo.m; sourceTree = "<group>"; };
 		8426F0A81A888A6800853F61 /* Setting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Setting.h; sourceTree = "<group>"; };
 		8426F0A91A888A6800853F61 /* Setting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Setting.m; sourceTree = "<group>"; };
+		849E06421A8CB2D90012CBE6 /* CameraCountdownView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraCountdownView.h; sourceTree = "<group>"; };
+		849E06431A8CB2D90012CBE6 /* CameraCountdownView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraCountdownView.m; sourceTree = "<group>"; };
+		849E06451A8CB68B0012CBE6 /* 倒计时plus1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "倒计时plus1.png"; sourceTree = "<group>"; };
+		849E06471A8CB6990012CBE6 /* 倒计时1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "倒计时1.png"; sourceTree = "<group>"; };
+		849E06491A8CB6A10012CBE6 /* 倒计时2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "倒计时2.png"; sourceTree = "<group>"; };
+		849E064A1A8CB6A10012CBE6 /* 倒计时plus2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "倒计时plus2.png"; sourceTree = "<group>"; };
+		849E064D1A8CB6A70012CBE6 /* 倒计时3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "倒计时3.png"; sourceTree = "<group>"; };
+		849E064E1A8CB6A70012CBE6 /* 倒计时plus3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "倒计时plus3.png"; sourceTree = "<group>"; };
 		84BB73051A89ADC000D1DC66 /* MSSPopMasonry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSSPopMasonry.h; sourceTree = "<group>"; };
 		84BB73061A89ADC000D1DC66 /* POPAnimatableProperty+Masonry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "POPAnimatableProperty+Masonry.h"; sourceTree = "<group>"; };
 		84BB73071A89ADC000D1DC66 /* POPAnimatableProperty+Masonry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "POPAnimatableProperty+Masonry.m"; sourceTree = "<group>"; };
@@ -107,6 +122,14 @@
 				02EACA37183EFC8500780D06 /* AppDelegate.m */,
 				8426F0A81A888A6800853F61 /* Setting.h */,
 				8426F0A91A888A6800853F61 /* Setting.m */,
+				849E06421A8CB2D90012CBE6 /* CameraCountdownView.h */,
+				849E06431A8CB2D90012CBE6 /* CameraCountdownView.m */,
+				849E064D1A8CB6A70012CBE6 /* 倒计时3.png */,
+				849E064E1A8CB6A70012CBE6 /* 倒计时plus3.png */,
+				849E06491A8CB6A10012CBE6 /* 倒计时2.png */,
+				849E064A1A8CB6A10012CBE6 /* 倒计时plus2.png */,
+				849E06451A8CB68B0012CBE6 /* 倒计时plus1.png */,
+				849E06471A8CB6990012CBE6 /* 倒计时1.png */,
 				02EACA5C183F00B300780D06 /* TestSwipeToPopOne.h */,
 				02EACA5D183F00B300780D06 /* TestSwipeToPopOne.m */,
 				02EACA5F183F014100780D06 /* TestSwipeToPopTwo.h */,
@@ -209,7 +232,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				02EACA32183EFC8500780D06 /* InfoPlist.strings in Resources */,
+				849E064B1A8CB6A10012CBE6 /* 倒计时2.png in Resources */,
+				849E06481A8CB6990012CBE6 /* 倒计时1.png in Resources */,
+				849E06461A8CB68B0012CBE6 /* 倒计时plus1.png in Resources */,
+				849E064C1A8CB6A10012CBE6 /* 倒计时plus2.png in Resources */,
+				849E064F1A8CB6A70012CBE6 /* 倒计时3.png in Resources */,
 				02EACA3A183EFC8500780D06 /* Images.xcassets in Resources */,
+				849E06501A8CB6A70012CBE6 /* 倒计时plus3.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,6 +284,7 @@
 			files = (
 				02EACA38183EFC8500780D06 /* AppDelegate.m in Sources */,
 				02EACA5E183F00B300780D06 /* TestSwipeToPopOne.m in Sources */,
+				849E06441A8CB2D90012CBE6 /* CameraCountdownView.m in Sources */,
 				84BB73081A89ADC000D1DC66 /* POPAnimatableProperty+Masonry.m in Sources */,
 				02EACA61183F014100780D06 /* TestSwipeToPopTwo.m in Sources */,
 				8426F0AA1A888A6800853F61 /* Setting.m in Sources */,
