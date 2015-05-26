@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "TestSwipeToPopOne.h"
+#import "LoaerCollectionViewController.h"
 
 @implementation AppDelegate
 
@@ -16,7 +17,8 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
-    TestSwipeToPopOne *tstp = [[TestSwipeToPopOne alloc] init];
+//    TestSwipeToPopOne *tstp = [[TestSwipeToPopOne alloc] init];
+    LoaerCollectionViewController *tstp = [[LoaerCollectionViewController alloc] init];
     UINavigationController *main = [[UINavigationController alloc] initWithRootViewController:tstp];
     main.navigationBarHidden = YES;
     self.window.rootViewController = main;

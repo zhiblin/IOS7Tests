@@ -18,6 +18,7 @@
 		02EACA61183F014100780D06 /* TestSwipeToPopTwo.m in Sources */ = {isa = PBXBuildFile; fileRef = 02EACA60183F014100780D06 /* TestSwipeToPopTwo.m */; };
 		3CDECEA963AD8AE544A6038F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BEF077E5FB6006EC409E7894 /* libPods.a */; };
 		8426F0AA1A888A6800853F61 /* Setting.m in Sources */ = {isa = PBXBuildFile; fileRef = 8426F0A91A888A6800853F61 /* Setting.m */; };
+		8499DA2A1B147E520021C873 /* NextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8499DA291B147E520021C873 /* NextViewController.m */; };
 		849E06441A8CB2D90012CBE6 /* CameraCountdownView.m in Sources */ = {isa = PBXBuildFile; fileRef = 849E06431A8CB2D90012CBE6 /* CameraCountdownView.m */; };
 		849E06461A8CB68B0012CBE6 /* 倒计时plus1.png in Resources */ = {isa = PBXBuildFile; fileRef = 849E06451A8CB68B0012CBE6 /* 倒计时plus1.png */; };
 		849E06481A8CB6990012CBE6 /* 倒计时1.png in Resources */ = {isa = PBXBuildFile; fileRef = 849E06471A8CB6990012CBE6 /* 倒计时1.png */; };
@@ -25,7 +26,12 @@
 		849E064C1A8CB6A10012CBE6 /* 倒计时plus2.png in Resources */ = {isa = PBXBuildFile; fileRef = 849E064A1A8CB6A10012CBE6 /* 倒计时plus2.png */; };
 		849E064F1A8CB6A70012CBE6 /* 倒计时3.png in Resources */ = {isa = PBXBuildFile; fileRef = 849E064D1A8CB6A70012CBE6 /* 倒计时3.png */; };
 		849E06501A8CB6A70012CBE6 /* 倒计时plus3.png in Resources */ = {isa = PBXBuildFile; fileRef = 849E064E1A8CB6A70012CBE6 /* 倒计时plus3.png */; };
+		84BA6AF41B140BB30054D05F /* LoaerCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BA6AF31B140BB30054D05F /* LoaerCollectionViewController.m */; };
+		84BA6AF71B140CC90054D05F /* LoaerCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BA6AF61B140CC90054D05F /* LoaerCollectionViewCell.m */; };
+		84BA6AFA1B1419F80054D05F /* LoaerTwitterCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BA6AF91B1419F80054D05F /* LoaerTwitterCollectionViewFlowLayout.m */; };
 		84BB73081A89ADC000D1DC66 /* POPAnimatableProperty+Masonry.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BB73071A89ADC000D1DC66 /* POPAnimatableProperty+Masonry.m */; };
+		84ED36341AA5BC5B00AFEACB /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84ED36331AA5BC5B00AFEACB /* AVFoundation.framework */; };
+		84ED36361AA5BC9E00AFEACB /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84ED36351AA5BC9E00AFEACB /* MobileCoreServices.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +56,8 @@
 		02EACA60183F014100780D06 /* TestSwipeToPopTwo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestSwipeToPopTwo.m; sourceTree = "<group>"; };
 		8426F0A81A888A6800853F61 /* Setting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Setting.h; sourceTree = "<group>"; };
 		8426F0A91A888A6800853F61 /* Setting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Setting.m; sourceTree = "<group>"; };
+		8499DA281B147E520021C873 /* NextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NextViewController.h; sourceTree = "<group>"; };
+		8499DA291B147E520021C873 /* NextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NextViewController.m; sourceTree = "<group>"; };
 		849E06421A8CB2D90012CBE6 /* CameraCountdownView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraCountdownView.h; sourceTree = "<group>"; };
 		849E06431A8CB2D90012CBE6 /* CameraCountdownView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraCountdownView.m; sourceTree = "<group>"; };
 		849E06451A8CB68B0012CBE6 /* 倒计时plus1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "倒计时plus1.png"; sourceTree = "<group>"; };
@@ -58,9 +66,17 @@
 		849E064A1A8CB6A10012CBE6 /* 倒计时plus2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "倒计时plus2.png"; sourceTree = "<group>"; };
 		849E064D1A8CB6A70012CBE6 /* 倒计时3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "倒计时3.png"; sourceTree = "<group>"; };
 		849E064E1A8CB6A70012CBE6 /* 倒计时plus3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "倒计时plus3.png"; sourceTree = "<group>"; };
+		84BA6AF21B140BB30054D05F /* LoaerCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoaerCollectionViewController.h; sourceTree = "<group>"; };
+		84BA6AF31B140BB30054D05F /* LoaerCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoaerCollectionViewController.m; sourceTree = "<group>"; };
+		84BA6AF51B140CC90054D05F /* LoaerCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoaerCollectionViewCell.h; sourceTree = "<group>"; };
+		84BA6AF61B140CC90054D05F /* LoaerCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoaerCollectionViewCell.m; sourceTree = "<group>"; };
+		84BA6AF81B1419F80054D05F /* LoaerTwitterCollectionViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoaerTwitterCollectionViewFlowLayout.h; sourceTree = "<group>"; };
+		84BA6AF91B1419F80054D05F /* LoaerTwitterCollectionViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoaerTwitterCollectionViewFlowLayout.m; sourceTree = "<group>"; };
 		84BB73051A89ADC000D1DC66 /* MSSPopMasonry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSSPopMasonry.h; sourceTree = "<group>"; };
 		84BB73061A89ADC000D1DC66 /* POPAnimatableProperty+Masonry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "POPAnimatableProperty+Masonry.h"; sourceTree = "<group>"; };
 		84BB73071A89ADC000D1DC66 /* POPAnimatableProperty+Masonry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "POPAnimatableProperty+Masonry.m"; sourceTree = "<group>"; };
+		84ED36331AA5BC5B00AFEACB /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		84ED36351AA5BC9E00AFEACB /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		9E5906AB5C8C85374ADD9701 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		BEF077E5FB6006EC409E7894 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0E48BA6D0057B0DD3A81A35 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -71,6 +87,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84ED36361AA5BC9E00AFEACB /* MobileCoreServices.framework in Frameworks */,
+				84ED36341AA5BC5B00AFEACB /* AVFoundation.framework in Frameworks */,
 				02EACA2A183EFC8500780D06 /* CoreGraphics.framework in Frameworks */,
 				02EACA2C183EFC8500780D06 /* UIKit.framework in Frameworks */,
 				02EACA28183EFC8500780D06 /* Foundation.framework in Frameworks */,
@@ -103,6 +121,8 @@
 		02EACA26183EFC8500780D06 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				84ED36351AA5BC9E00AFEACB /* MobileCoreServices.framework */,
+				84ED36331AA5BC5B00AFEACB /* AVFoundation.framework */,
 				02EACA27183EFC8500780D06 /* Foundation.framework */,
 				02EACA29183EFC8500780D06 /* CoreGraphics.framework */,
 				02EACA2B183EFC8500780D06 /* UIKit.framework */,
@@ -118,12 +138,20 @@
 				84BB73051A89ADC000D1DC66 /* MSSPopMasonry.h */,
 				84BB73061A89ADC000D1DC66 /* POPAnimatableProperty+Masonry.h */,
 				84BB73071A89ADC000D1DC66 /* POPAnimatableProperty+Masonry.m */,
+				8499DA281B147E520021C873 /* NextViewController.h */,
+				8499DA291B147E520021C873 /* NextViewController.m */,
 				02EACA36183EFC8500780D06 /* AppDelegate.h */,
 				02EACA37183EFC8500780D06 /* AppDelegate.m */,
 				8426F0A81A888A6800853F61 /* Setting.h */,
 				8426F0A91A888A6800853F61 /* Setting.m */,
 				849E06421A8CB2D90012CBE6 /* CameraCountdownView.h */,
 				849E06431A8CB2D90012CBE6 /* CameraCountdownView.m */,
+				84BA6AF21B140BB30054D05F /* LoaerCollectionViewController.h */,
+				84BA6AF31B140BB30054D05F /* LoaerCollectionViewController.m */,
+				84BA6AF51B140CC90054D05F /* LoaerCollectionViewCell.h */,
+				84BA6AF61B140CC90054D05F /* LoaerCollectionViewCell.m */,
+				84BA6AF81B1419F80054D05F /* LoaerTwitterCollectionViewFlowLayout.h */,
+				84BA6AF91B1419F80054D05F /* LoaerTwitterCollectionViewFlowLayout.m */,
 				849E064D1A8CB6A70012CBE6 /* 倒计时3.png */,
 				849E064E1A8CB6A70012CBE6 /* 倒计时plus3.png */,
 				849E06491A8CB6A10012CBE6 /* 倒计时2.png */,
@@ -207,7 +235,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0500;
-				ORGANIZATIONNAME = pipaw;
+				ORGANIZATIONNAME = loaer;
 			};
 			buildConfigurationList = 02EACA1F183EFC8500780D06 /* Build configuration list for PBXProject "IOS7Tests" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -282,12 +310,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84BA6AFA1B1419F80054D05F /* LoaerTwitterCollectionViewFlowLayout.m in Sources */,
+				84BA6AF41B140BB30054D05F /* LoaerCollectionViewController.m in Sources */,
 				02EACA38183EFC8500780D06 /* AppDelegate.m in Sources */,
 				02EACA5E183F00B300780D06 /* TestSwipeToPopOne.m in Sources */,
+				8499DA2A1B147E520021C873 /* NextViewController.m in Sources */,
 				849E06441A8CB2D90012CBE6 /* CameraCountdownView.m in Sources */,
 				84BB73081A89ADC000D1DC66 /* POPAnimatableProperty+Masonry.m in Sources */,
 				02EACA61183F014100780D06 /* TestSwipeToPopTwo.m in Sources */,
 				8426F0AA1A888A6800853F61 /* Setting.m in Sources */,
+				84BA6AF71B140CC90054D05F /* LoaerCollectionViewCell.m in Sources */,
 				02EACA34183EFC8500780D06 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

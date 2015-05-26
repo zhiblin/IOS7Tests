@@ -9,6 +9,8 @@
 #import "Setting.h"
 #import "MSSPopMasonry.h"
 
+@import MobileCoreServices;
+
 @implementation Setting
 
 - (instancetype)initWithFrame:(CGRect)frame{
@@ -25,7 +27,7 @@
 -(void)setupViewDefaults{
     
     self.main = [UIButton buttonWithType:UIButtonTypeCustom];
-    [self.main addTarget:self action:@selector(domain) forControlEvents:UIControlEventTouchUpInside];
+    [self.main addTarget:self action:@selector(toPicture) forControlEvents:UIControlEventTouchUpInside];
     [self.main setBackgroundColor:[UIColor blueColor]];
     [self addSubview:self.main];
     
@@ -93,6 +95,9 @@
     }];
    
 }
+
+
+
 
 -(void)dosetting{
     

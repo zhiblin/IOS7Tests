@@ -9,7 +9,11 @@
 #import <UIKit/UIKit.h>
 #import "CameraCountdownView.h"
 
-@interface TestSwipeToPopOne : UIViewController<CameraCountdownViewDelegate>
+@import MobileCoreServices;
+@import AVFoundation;
+@import CoreFoundation;
+
+@interface TestSwipeToPopOne : UIViewController<CameraCountdownViewDelegate,UIImagePickerControllerDelegate>
 
 @property (nonatomic, strong) CameraCountdownView *countdownView;
 
