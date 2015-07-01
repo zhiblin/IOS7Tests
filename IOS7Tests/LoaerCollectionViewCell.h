@@ -11,5 +11,6 @@
 @interface LoaerCollectionViewCell : UICollectionViewCell
 
 @property (nonatomic, strong) UIImageView *titleImageView;
+@property (nonatomic, strong) UILabel *titleLabel;
 
 @end

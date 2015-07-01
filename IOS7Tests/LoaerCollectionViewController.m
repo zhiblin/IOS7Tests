@@ -24,7 +24,7 @@
     // Do any additional setup after loading the view.
     
     self.titleArray = [[NSMutableArray alloc] init];
-    for (int i = 1; i < 6; i++) {
+    for (int i = 1; i < 60; i++) {
         [self.titleArray addObject:[NSString stringWithFormat:@"%i",i]];
     }
     LoaerTwitterCollectionViewFlowLayout *flowLayout= [[LoaerTwitterCollectionViewFlowLayout alloc]init];
@@ -53,7 +53,7 @@
 {
     static NSString * CellIdentifier = @"CollectionCell";
     LoaerCollectionViewCell * cell = [collectionView dequeueReusableCellWithReuseIdentifier:CellIdentifier forIndexPath:indexPath];
-    
+    cell.titleLabel.text = [self.titleArray objectAtIndex:indexPath.row];
 //    cell.backgroundColor = [UIColor colorWithRed:((10 * indexPath.row) / 255.0) green:((20 * indexPath.row)/255.0) blue:((30 * indexPath.row)/255.0) alpha:1.0f];
     return cell;
 }

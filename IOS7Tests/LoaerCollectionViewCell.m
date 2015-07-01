@@ -15,7 +15,12 @@
     self = [super initWithFrame:frame];
     if (self)
     {
-        self.backgroundColor = [UIColor blueColor];
+        self.backgroundColor = [UIColor redColor];
+        self.titleLabel = [[UILabel alloc] initWithFrame:self.frame];
+        self.titleLabel.font = [UIFont systemFontOfSize:28.f];
+        self.titleLabel.textAlignment = NSTextAlignmentCenter;
+        self.titleLabel.textColor = [UIColor whiteColor];
+        [self addSubview:self.titleLabel];
         self.titleImageView = [[UIImageView alloc] initWithFrame:self.frame];
         self.titleImageView.image = [UIImage imageNamed:@"倒计时1"];
 //        [self addSubview:self.titleImageView];
