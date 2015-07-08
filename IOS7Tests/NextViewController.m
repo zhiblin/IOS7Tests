@@ -17,6 +17,18 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.view.backgroundColor = [UIColor redColor];
+    UIButton *butt = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    
+    [butt setFrame:CGRectMake(60, 100, 120, 100)];
+    [butt setTitle:@"back" forState:UIControlStateNormal];
+    [butt addTarget:self action:@selector(back) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:butt];
+}
+
+-(void)back{
+    
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (void)didReceiveMemoryWarning {

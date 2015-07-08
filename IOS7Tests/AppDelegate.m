@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "TestSwipeToPopOne.h"
 #import "LoaerCollectionViewController.h"
+#import "PullViewController.h"
 
 @implementation AppDelegate
 
@@ -18,11 +19,13 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
 //    TestSwipeToPopOne *tstp = [[TestSwipeToPopOne alloc] init];
-    LoaerCollectionViewController *tstp = [[LoaerCollectionViewController alloc] init];
-    UINavigationController *main = [[UINavigationController alloc] initWithRootViewController:tstp];
+//    LoaerCollectionViewController *tstp = [[LoaerCollectionViewController alloc] init];
+    
+    PullViewController *pull = [[PullViewController alloc] init];
+    UINavigationController *main = [[UINavigationController alloc] initWithRootViewController:pull];
     main.navigationBarHidden = YES;
     self.window.rootViewController = main;
-    
+    self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
 }
