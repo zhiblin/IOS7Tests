@@ -12,8 +12,8 @@
 #import "MTImageScrollView.h"
 
 
-static CGFloat ImageHeight  = 72.0;
-static CGFloat ImageWidth  = 76.0;
+static CGFloat ImageHeight  = 68.0;
+static CGFloat ImageWidth  = 68.0;
 
 @interface PullViewController ()<UIScrollViewDelegate>
 
@@ -23,7 +23,6 @@ static CGFloat ImageWidth  = 76.0;
 @property (nonatomic, strong) UIView *myview;
 @property (nonatomic, strong) UIView *backView;
 @property (nonatomic, assign) BOOL down;
-@property(nonatomic,strong) UIImageView *fakeView;
 @property(nonatomic) BOOL updateWithDraging;
 
 @end
@@ -101,6 +100,49 @@ static CGFloat ImageWidth  = 76.0;
     
 }
 
+- (UIImageView*)loadCameraIcon:(NSString*)imageName{
+    
+    UIImageView *cameraImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:imageName]];
+    cameraImage.frame = CGRectMake(self.view.frame.size.width/2, 0, 1, 1);
+    cameraImage.center = CGPointMake(self.view.frame.size.width/2, 0);
+    return cameraImage;
+}
+//
+-(void)allCameraIcon{
+    
+    self.cameraBottomImage = [self loadCameraIcon:@"下拉拍照步骤1"];
+    self.cameraMiddleImage = [self loadCameraIcon:@"下拉拍照步骤2"];
+    self.cameraTopLeftImage = [self loadCameraIcon:@"下拉拍照步骤3"];
+    self.cameraTopRightImage = [self loadCameraIcon:@"下拉拍照步骤4"];
+    self.cameraMiddleImage.alpha = self.cameraTopLeftImage.alpha = self.cameraTopRightImage.alpha = 0.0;
+    [self.view addSubview:self.cameraBottomImage];
+    [self.view addSubview:self.cameraMiddleImage];
+    [self.view addSubview:self.cameraTopLeftImage];
+    [self.view addSubview:self.cameraTopRightImage];
+}
+
+- (void)udpateView:(float)yOffset {
+    
+//    CGFloat yOffset   = self.scrollView.contentOffset.y;
+    CGFloat maxHeight = self.view.frame.size.height/5;
+    float zoom = ABS(yOffset)/maxHeight;
+//    NSLog(@";;;;;;;;;%f,,,%f,,,,%hhd",zoom,yOffset,_updateWithDraging);
+    if (self.scrollView.contentOffset.y >= 0) {
+        self.scrollView.contentOffset = CGPointZero;
+    }
+    if (yOffset < 0 && _updateWithDraging && zoom <= 1) {
+        CGRect f = self.imgProfile.frame;
+        f.size = CGSizeMake(ImageWidth*zoom, ImageHeight*zoom);
+        self.imgProfile.frame = f;
+        self.imgProfile.center = CGPointMake(self.view.frame.size.width/2, ABS(yOffset)/2);
+        
+    }
+    else if (yOffset < 0 && _updateWithDraging && zoom > 1) {
+        self.imgProfile.center = CGPointMake(self.view.frame.size.width/2, ABS(yOffset)/2);
+    }
+    
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
 //    UIImageView *myimage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"倒计时3.png"]];
@@ -132,27 +174,22 @@ static CGFloat ImageWidth  = 76.0;
 //    // Do any additional setup after loading 45the view.
 
     self.view.backgroundColor = [UIColor redColor];
+    
     UIImage *image = [UIImage imageNamed:@"下拉拍照"];
+    
     self.imgProfile = [[UIImageView alloc] initWithImage:image];
     self.imgProfile.frame = CGRectMake(self.view.frame.size.width/2, 0, 1, 1);
     self.imgProfile.center = CGPointMake(self.view.frame.size.width/2, 0);
     
-//    self.fakeView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"倒计时1"]];
     UIView *my = [[UIView alloc] initWithFrame:self.view.frame];
     my.backgroundColor = [UIColor blackColor];
     CGRect frame = self.view.frame;
-//    frame.origin.y = 0;
-//    self.fakeView.frame = frame;
-    
     self.scrollView = [[UIScrollView alloc] init];
-//    [self.scrollView setFrame:self.view.bounds];
     self.scrollView.delegate = self;
-//    self.scrollView.backgroundColor = [UIColor redColor];
     self.scrollView.contentSize = CGSizeMake(320, frame.size.height+1);
     
     [self.scrollView addSubview:my];
-    
-    [self.view addSubview:self.imgProfile];
+    [self allCameraIcon];
     [self.view addSubview:self.scrollView];
 }
 
@@ -179,17 +216,19 @@ static CGFloat ImageWidth  = 76.0;
     CGFloat yOffset   = self.scrollView.contentOffset.y;
     CGFloat maxHeight = self.view.frame.size.height/5;
     float zoom = ABS(yOffset)/maxHeight;
-    NSLog(@";;;;;;;;;%f,,,%f,,,,%hhd",zoom,yOffset,_updateWithDraging);
+    if (self.scrollView.contentOffset.y >= 0) {
+        self.scrollView.contentOffset = CGPointZero;
+    }
     if (yOffset < 0 && _updateWithDraging && zoom <= 1) {
-        CGRect f = self.imgProfile.frame;
+        CGRect f = self.cameraBottomImage.frame;
         f.size = CGSizeMake(ImageWidth*zoom, ImageHeight*zoom);
-        self.imgProfile.frame = f;
-        self.imgProfile.center = CGPointMake(self.view.frame.size.width/2, ABS(yOffset)/2);
+        self.cameraBottomImage.frame = self.cameraMiddleImage.frame = self.cameraTopLeftImage.frame = self.cameraTopRightImage.frame = f;
+        self.cameraMiddleImage.alpha = self.cameraTopLeftImage.alpha = self.cameraTopRightImage.alpha = zoom;
+        self.cameraBottomImage.center = self.cameraMiddleImage.center = self.cameraTopLeftImage.center = self.cameraTopRightImage.center = CGPointMake(self.view.frame.size.width/2, ABS(yOffset)/2);
         
     }
-    else{
-        [scrollView setScrollEnabled:NO];
-        [scrollView setContentInset:UIEdgeInsetsMake(0, 0, 0, 0)];
+    else if (yOffset < 0 && _updateWithDraging && zoom > 1) {
+        self.cameraBottomImage.center = self.cameraMiddleImage.center = self.cameraTopLeftImage.center = self.cameraTopRightImage.center = CGPointMake(self.view.frame.size.width/2, ABS(yOffset)/2);
     }
 
 }
@@ -208,7 +247,7 @@ static CGFloat ImageWidth  = 76.0;
             CGRect rect = scrollView.frame;
             rect.origin.y = scrollView.frame.size.height;
             scrollView.frame = rect;
-            [self.imgProfile setCenter:CGPointMake(self.view.frame.size.width/2, self.view.frame.size.height/2)];
+            self.cameraBottomImage.center = self.cameraMiddleImage.center = self.cameraTopLeftImage.center = self.cameraTopRightImage.center = CGPointMake(self.view.frame.size.width/2, self.view.frame.size.height/2);
         } completion:^(BOOL finished) {
           
             [self.navigationController pushViewController:[[NextViewController alloc] init] animated:NO];

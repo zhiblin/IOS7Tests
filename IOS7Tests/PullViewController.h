@@ -11,6 +11,10 @@
 @interface PullViewController : UIViewController<UIScrollViewDelegate>
 
 @property (nonatomic, retain) UIImageView *imgProfile;
+@property (nonatomic, retain) UIImageView *cameraBottomImage;
+@property (nonatomic, retain) UIImageView *cameraMiddleImage;
+@property (nonatomic, retain) UIImageView *cameraTopLeftImage;
+@property (nonatomic, retain) UIImageView *cameraTopRightImage;
 @property (nonatomic, retain) UIScrollView *scrollView;
 
 @end
