@@ -10,3 +10,9 @@ pod 'Masonry'
 pod 'ReactiveCocoa'
 
 pod 'libextobjc'
+
+pod 'ASIHTTPRequest'
+
+pod 'AFNetworking-RACExtensions'
+
+pod 'MBProgressHUD'

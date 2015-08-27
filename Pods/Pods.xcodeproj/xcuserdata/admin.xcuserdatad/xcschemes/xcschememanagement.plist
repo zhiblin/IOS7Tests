@@ -4,22 +4,27 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Pods-Masonry.xcscheme</key>
+		<key>AFNetworking-RACExtensions.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-ReactiveCocoa.xcscheme</key>
+		<key>AFNetworking.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-libextobjc.xcscheme</key>
+		<key>ASIHTTPRequest.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-pop.xcscheme</key>
+		<key>MBProgressHUD.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Masonry.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -29,30 +34,75 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Reachability.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>ReactiveCocoa.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>libextobjc.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>pop.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>08629C9CA75640D3BB4238C3</key>
+		<key>1893DE70459B9C5430E1E53597BF9817</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>29E8EC9D248FFBE27ECC4FFC</key>
+		<key>1E35B1B53453CA4362E30C556FBD7C04</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B7C694C5CB0008F106617270</key>
+		<key>47C800E42623009B7192B025B3DD25A1</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>DEBE5C15306F74C49CFA9475</key>
+		<key>6951DA9871DA259A9AAA6EFC68AEF8EB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F3D669365396A0A7FBAD1A49</key>
+		<key>7E41CA2ECB40C640963734378302229C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>85BBF74DBEFE24DF370F6B344830C036</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A78D32C0BACF705C2D8F89A70A85154D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>AECAA9C8D1DB06C3D70020B39FF13243</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C3EA299C1B079079DC4493E5925197B0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FBC48C7267FC7EE2207CE66401F0B1CF</key>
 		<dict>
 			<key>primary</key>
 			<true/>

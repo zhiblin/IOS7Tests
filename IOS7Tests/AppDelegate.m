@@ -10,6 +10,7 @@
 #import "TestSwipeToPopOne.h"
 #import "LoaerCollectionViewController.h"
 #import "PullViewController.h"
+#import "NetDataViewController.h"
 
 @implementation AppDelegate
 
@@ -21,8 +22,9 @@
 //    TestSwipeToPopOne *tstp = [[TestSwipeToPopOne alloc] init];
 //    LoaerCollectionViewController *tstp = [[LoaerCollectionViewController alloc] init];
     
-    PullViewController *pull = [[PullViewController alloc] init];
-    UINavigationController *main = [[UINavigationController alloc] initWithRootViewController:pull];
+//    PullViewController *pull = [[PullViewController alloc] init];
+    NetDataViewController *netdata = [[NetDataViewController alloc] init];
+    UINavigationController *main = [[UINavigationController alloc] initWithRootViewController:netdata];
     main.navigationBarHidden = YES;
     self.window.rootViewController = main;
     self.window.backgroundColor = [UIColor whiteColor];

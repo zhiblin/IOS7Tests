@@ -31,6 +31,17 @@
 		84BA6AFA1B1419F80054D05F /* LoaerTwitterCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BA6AF91B1419F80054D05F /* LoaerTwitterCollectionViewFlowLayout.m */; };
 		84BB73081A89ADC000D1DC66 /* POPAnimatableProperty+Masonry.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BB73071A89ADC000D1DC66 /* POPAnimatableProperty+Masonry.m */; };
 		84BDBC951B4BCE6F00EFD1F4 /* MTImageScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BDBC941B4BCE6F00EFD1F4 /* MTImageScrollView.m */; };
+		84BE833C1B8EABA200F96522 /* ImageScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BE832B1B8EABA200F96522 /* ImageScrollView.m */; };
+		84BE833D1B8EABA200F96522 /* MTAssetsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BE832D1B8EABA200F96522 /* MTAssetsViewController.m */; };
+		84BE833E1B8EABA200F96522 /* MTGroupsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BE832F1B8EABA200F96522 /* MTGroupsViewController.m */; };
+		84BE833F1B8EABA200F96522 /* MTPictureCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BE83311B8EABA200F96522 /* MTPictureCell.m */; };
+		84BE83401B8EABA200F96522 /* MTPictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BE83331B8EABA200F96522 /* MTPictureViewController.m */; };
+		84BE83411B8EABA200F96522 /* MyPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BE83351B8EABA200F96522 /* MyPageViewController.m */; };
+		84BE83421B8EABA200F96522 /* PageViewControllerData.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BE83371B8EABA200F96522 /* PageViewControllerData.m */; };
+		84BE83431B8EABA200F96522 /* PhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BE83391B8EABA200F96522 /* PhotoViewController.m */; };
+		84BE83441B8EABA200F96522 /* UIImage+ImageTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BE833B1B8EABA200F96522 /* UIImage+ImageTool.m */; };
+		84BE83471B8EAC6200F96522 /* AlbumAuthoryHelpView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BE83461B8EAC6200F96522 /* AlbumAuthoryHelpView.m */; };
+		84E23C491B8D609E004A083A /* NetDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E23C481B8D609E004A083A /* NetDataViewController.m */; };
 		84E572111B43DD5600815262 /* PullViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E572101B43DD5600815262 /* PullViewController.m */; };
 		84ED36341AA5BC5B00AFEACB /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84ED36331AA5BC5B00AFEACB /* AVFoundation.framework */; };
 		84ED36361AA5BC9E00AFEACB /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84ED36351AA5BC9E00AFEACB /* MobileCoreServices.framework */; };
@@ -79,6 +90,28 @@
 		84BB73071A89ADC000D1DC66 /* POPAnimatableProperty+Masonry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "POPAnimatableProperty+Masonry.m"; sourceTree = "<group>"; };
 		84BDBC931B4BCE6F00EFD1F4 /* MTImageScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTImageScrollView.h; sourceTree = "<group>"; };
 		84BDBC941B4BCE6F00EFD1F4 /* MTImageScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTImageScrollView.m; sourceTree = "<group>"; };
+		84BE832A1B8EABA200F96522 /* ImageScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageScrollView.h; sourceTree = "<group>"; };
+		84BE832B1B8EABA200F96522 /* ImageScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageScrollView.m; sourceTree = "<group>"; };
+		84BE832C1B8EABA200F96522 /* MTAssetsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTAssetsViewController.h; sourceTree = "<group>"; };
+		84BE832D1B8EABA200F96522 /* MTAssetsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTAssetsViewController.m; sourceTree = "<group>"; };
+		84BE832E1B8EABA200F96522 /* MTGroupsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTGroupsViewController.h; sourceTree = "<group>"; };
+		84BE832F1B8EABA200F96522 /* MTGroupsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTGroupsViewController.m; sourceTree = "<group>"; };
+		84BE83301B8EABA200F96522 /* MTPictureCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTPictureCell.h; sourceTree = "<group>"; };
+		84BE83311B8EABA200F96522 /* MTPictureCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTPictureCell.m; sourceTree = "<group>"; };
+		84BE83321B8EABA200F96522 /* MTPictureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTPictureViewController.h; sourceTree = "<group>"; };
+		84BE83331B8EABA200F96522 /* MTPictureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTPictureViewController.m; sourceTree = "<group>"; };
+		84BE83341B8EABA200F96522 /* MyPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyPageViewController.h; sourceTree = "<group>"; };
+		84BE83351B8EABA200F96522 /* MyPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyPageViewController.m; sourceTree = "<group>"; };
+		84BE83361B8EABA200F96522 /* PageViewControllerData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageViewControllerData.h; sourceTree = "<group>"; };
+		84BE83371B8EABA200F96522 /* PageViewControllerData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageViewControllerData.m; sourceTree = "<group>"; };
+		84BE83381B8EABA200F96522 /* PhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoViewController.h; sourceTree = "<group>"; };
+		84BE83391B8EABA200F96522 /* PhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoViewController.m; sourceTree = "<group>"; };
+		84BE833A1B8EABA200F96522 /* UIImage+ImageTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageTool.h"; sourceTree = "<group>"; };
+		84BE833B1B8EABA200F96522 /* UIImage+ImageTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageTool.m"; sourceTree = "<group>"; };
+		84BE83451B8EAC6200F96522 /* AlbumAuthoryHelpView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumAuthoryHelpView.h; sourceTree = "<group>"; };
+		84BE83461B8EAC6200F96522 /* AlbumAuthoryHelpView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumAuthoryHelpView.m; sourceTree = "<group>"; };
+		84E23C471B8D609E004A083A /* NetDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetDataViewController.h; sourceTree = "<group>"; };
+		84E23C481B8D609E004A083A /* NetDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetDataViewController.m; sourceTree = "<group>"; };
 		84E5720F1B43DD5600815262 /* PullViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PullViewController.h; sourceTree = "<group>"; };
 		84E572101B43DD5600815262 /* PullViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PullViewController.m; sourceTree = "<group>"; };
 		84ED36331AA5BC5B00AFEACB /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -141,6 +174,7 @@
 		02EACA2D183EFC8500780D06 /* IOS7Tests */ = {
 			isa = PBXGroup;
 			children = (
+				84BE83291B8EABA200F96522 /* PictureLib */,
 				84BDBC921B4BCE6F00EFD1F4 /* imageScrollView */,
 				84BB73051A89ADC000D1DC66 /* MSSPopMasonry.h */,
 				84BB73061A89ADC000D1DC66 /* POPAnimatableProperty+Masonry.h */,
@@ -171,6 +205,8 @@
 				02EACA5D183F00B300780D06 /* TestSwipeToPopOne.m */,
 				02EACA5F183F014100780D06 /* TestSwipeToPopTwo.h */,
 				02EACA60183F014100780D06 /* TestSwipeToPopTwo.m */,
+				84E23C471B8D609E004A083A /* NetDataViewController.h */,
+				84E23C481B8D609E004A083A /* NetDataViewController.m */,
 				02EACA39183EFC8500780D06 /* Images.xcassets */,
 				02EACA2E183EFC8500780D06 /* Supporting Files */,
 			);
@@ -213,6 +249,33 @@
 				84BDBC941B4BCE6F00EFD1F4 /* MTImageScrollView.m */,
 			);
 			path = imageScrollView;
+			sourceTree = "<group>";
+		};
+		84BE83291B8EABA200F96522 /* PictureLib */ = {
+			isa = PBXGroup;
+			children = (
+				84BE832A1B8EABA200F96522 /* ImageScrollView.h */,
+				84BE832B1B8EABA200F96522 /* ImageScrollView.m */,
+				84BE832C1B8EABA200F96522 /* MTAssetsViewController.h */,
+				84BE832D1B8EABA200F96522 /* MTAssetsViewController.m */,
+				84BE832E1B8EABA200F96522 /* MTGroupsViewController.h */,
+				84BE832F1B8EABA200F96522 /* MTGroupsViewController.m */,
+				84BE83301B8EABA200F96522 /* MTPictureCell.h */,
+				84BE83311B8EABA200F96522 /* MTPictureCell.m */,
+				84BE83321B8EABA200F96522 /* MTPictureViewController.h */,
+				84BE83331B8EABA200F96522 /* MTPictureViewController.m */,
+				84BE83341B8EABA200F96522 /* MyPageViewController.h */,
+				84BE83351B8EABA200F96522 /* MyPageViewController.m */,
+				84BE83361B8EABA200F96522 /* PageViewControllerData.h */,
+				84BE83371B8EABA200F96522 /* PageViewControllerData.m */,
+				84BE83381B8EABA200F96522 /* PhotoViewController.h */,
+				84BE83391B8EABA200F96522 /* PhotoViewController.m */,
+				84BE833A1B8EABA200F96522 /* UIImage+ImageTool.h */,
+				84BE833B1B8EABA200F96522 /* UIImage+ImageTool.m */,
+				84BE83451B8EAC6200F96522 /* AlbumAuthoryHelpView.h */,
+				84BE83461B8EAC6200F96522 /* AlbumAuthoryHelpView.m */,
+			);
+			path = PictureLib;
 			sourceTree = "<group>";
 		};
 		9CB9FB3EC67903B797DC1850 /* Pods */ = {
@@ -328,15 +391,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84BE83421B8EABA200F96522 /* PageViewControllerData.m in Sources */,
 				84BDBC951B4BCE6F00EFD1F4 /* MTImageScrollView.m in Sources */,
 				84BA6AFA1B1419F80054D05F /* LoaerTwitterCollectionViewFlowLayout.m in Sources */,
+				84E23C491B8D609E004A083A /* NetDataViewController.m in Sources */,
 				84BA6AF41B140BB30054D05F /* LoaerCollectionViewController.m in Sources */,
+				84BE83401B8EABA200F96522 /* MTPictureViewController.m in Sources */,
 				02EACA38183EFC8500780D06 /* AppDelegate.m in Sources */,
 				02EACA5E183F00B300780D06 /* TestSwipeToPopOne.m in Sources */,
+				84BE833D1B8EABA200F96522 /* MTAssetsViewController.m in Sources */,
+				84BE83431B8EABA200F96522 /* PhotoViewController.m in Sources */,
+				84BE83471B8EAC6200F96522 /* AlbumAuthoryHelpView.m in Sources */,
+				84BE833E1B8EABA200F96522 /* MTGroupsViewController.m in Sources */,
 				8499DA2A1B147E520021C873 /* NextViewController.m in Sources */,
 				849E06441A8CB2D90012CBE6 /* CameraCountdownView.m in Sources */,
 				84BB73081A89ADC000D1DC66 /* POPAnimatableProperty+Masonry.m in Sources */,
+				84BE833F1B8EABA200F96522 /* MTPictureCell.m in Sources */,
+				84BE83441B8EABA200F96522 /* UIImage+ImageTool.m in Sources */,
+				84BE833C1B8EABA200F96522 /* ImageScrollView.m in Sources */,
 				02EACA61183F014100780D06 /* TestSwipeToPopTwo.m in Sources */,
+				84BE83411B8EABA200F96522 /* MyPageViewController.m in Sources */,
 				8426F0AA1A888A6800853F61 /* Setting.m in Sources */,
 				84BA6AF71B140CC90054D05F /* LoaerCollectionViewCell.m in Sources */,
 				02EACA34183EFC8500780D06 /* main.m in Sources */,
