@@ -11,6 +11,8 @@
 #import "LoaerCollectionViewController.h"
 #import "PullViewController.h"
 #import "NetDataViewController.h"
+#import "AdViewController.h"
+#import "MixTestViewController.h"
 
 @implementation AppDelegate
 
@@ -23,8 +25,10 @@
 //    LoaerCollectionViewController *tstp = [[LoaerCollectionViewController alloc] init];
     
 //    PullViewController *pull = [[PullViewController alloc] init];
-    NetDataViewController *netdata = [[NetDataViewController alloc] init];
-    UINavigationController *main = [[UINavigationController alloc] initWithRootViewController:netdata];
+//    NetDataViewController *netdata = [[NetDataViewController alloc] init];
+//    AdViewController *ad = [[AdViewController alloc] init];
+    MixTestViewController *test = [[MixTestViewController alloc] init];
+    UINavigationController *main = [[UINavigationController alloc] initWithRootViewController:test];
     main.navigationBarHidden = YES;
     self.window.rootViewController = main;
     self.window.backgroundColor = [UIColor whiteColor];

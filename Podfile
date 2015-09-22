@@ -16,3 +16,7 @@ pod 'ASIHTTPRequest'
 pod 'AFNetworking-RACExtensions'
 
 pod 'MBProgressHUD'
+
+pod 'Mixpanel'
+
+pod 'FBSDKCoreKit', '~> 4.6.0'

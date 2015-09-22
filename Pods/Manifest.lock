@@ -36,6 +36,21 @@ PODS:
     - Reachability
   - ASIHTTPRequest/S3 (1.8.2):
     - ASIHTTPRequest/Core
+  - Bolts (1.2.2):
+    - Bolts/AppLinks (= 1.2.2)
+    - Bolts/Tasks (= 1.2.2)
+  - Bolts/AppLinks (1.2.2):
+    - Bolts/Tasks
+  - Bolts/Tasks (1.2.2)
+  - FBSDKCoreKit (4.6.0):
+    - Bolts (~> 1.1)
+    - FBSDKCoreKit/arc (= 4.6.0)
+    - FBSDKCoreKit/no-arc (= 4.6.0)
+  - FBSDKCoreKit/arc (4.6.0):
+    - Bolts (~> 1.1)
+  - FBSDKCoreKit/no-arc (4.6.0):
+    - Bolts (~> 1.1)
+    - FBSDKCoreKit/arc
   - libextobjc (0.4.1):
     - libextobjc/EXTADT (= 0.4.1)
     - libextobjc/EXTConcreteProtocol (= 0.4.1)
@@ -73,6 +88,9 @@ PODS:
   - libextobjc/UmbrellaHeader (0.4.1)
   - Masonry (0.6.2)
   - MBProgressHUD (0.9.1)
+  - Mixpanel (2.8.3):
+    - Mixpanel/Mixpanel (= 2.8.3)
+  - Mixpanel/Mixpanel (2.8.3)
   - pop (1.0.7)
   - Reachability (3.2)
   - ReactiveCocoa (2.5):
@@ -86,9 +104,11 @@ PODS:
 DEPENDENCIES:
   - AFNetworking-RACExtensions
   - ASIHTTPRequest
+  - FBSDKCoreKit (~> 4.6.0)
   - libextobjc
   - Masonry
   - MBProgressHUD
+  - Mixpanel
   - pop
   - ReactiveCocoa
 
@@ -96,9 +116,12 @@ SPEC CHECKSUMS:
   AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
   AFNetworking-RACExtensions: a043c6b492fa892395ceb9d20bc4c94e96e08a57
   ASIHTTPRequest: ec013992946676b7978dcbde6396d57312d21db4
+  Bolts: 20a2bd788273360cb1e31530dc19b8544eef2544
+  FBSDKCoreKit: 9954492d90c5fd65ae831395697a1660360d61f1
   libextobjc: a650fc1bf489a3d3a9bc2e621efa3e1006fc5471
   Masonry: 362e8a1cc0beada4a4c4832d5e863da2a51533be
   MBProgressHUD: c47f2c166c126cf2ce36498d80f33e754d4e93ad
+  Mixpanel: fd52e097ae0d27295d0595b2261c60b94d191fda
   pop: 628ffc631644601567ee8bfaaaea493ebd7d0923
   Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a

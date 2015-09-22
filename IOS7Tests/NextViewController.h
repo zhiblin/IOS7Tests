@@ -10,4 +10,6 @@
 
 @interface NextViewController : UIViewController
 
+-(id)initWithImage:(UIImage *)showImage;
+
 @end

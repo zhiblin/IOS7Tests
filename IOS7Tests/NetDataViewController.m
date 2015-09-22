@@ -10,6 +10,8 @@
 #import "ReactiveCocoa.h"
 #import <ReactiveCocoa/RACEXTScope.h>
 #import <ASIHTTPRequest.h>
+#import "AlbumsTableViewController.h"
+#import "NextViewController.h"
 
 #define kMTServerAddress        @"http://backend.beautyplus.com/beautyplusaddata/getbeautyplusad.json?lang="
 
@@ -22,8 +24,28 @@
 - (void)viewDidLoad {
   [super viewDidLoad];
   // Do any additional setup after loading the view.
+    
+    UIButton *toa = [UIButton buttonWithType:UIButtonTypeCustom];
+    [toa addTarget:self action:@selector(to) forControlEvents:UIControlEventTouchUpInside];
+    [toa setTitle:@"album" forState:UIControlStateNormal];
+    [toa setBackgroundColor:[UIColor blackColor]];
+    [toa setFrame:CGRectMake(60, 100, 120, 100)];
+    [self.view addSubview:toa];
 }
 
+-(void)to{
+    
+    AlbumsTableViewController *album = [[AlbumsTableViewController alloc] initWithToCameraRoll:YES];
+    album.selectImage = ^(UIImage *assetImage){
+        [self.navigationController setViewControllers:[NSArray arrayWithObjects:[[self.navigationController viewControllers] objectAtIndex:0],[[NextViewController alloc] initWithImage:assetImage], nil] animated:YES];
+    };
+//    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:album];
+//    nav.navigationBarHidden = YES;
+    [self.navigationController pushViewController:album animated:YES];
+//    [self presentViewController:nav animated:YES completion:^{
+//    
+//    }];
+}
 - (void)didReceiveMemoryWarning {
   [super didReceiveMemoryWarning];
   // Dispose of any resources that can be recreated.

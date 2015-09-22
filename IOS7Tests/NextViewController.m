@@ -10,14 +10,30 @@
 
 @interface NextViewController ()
 
+@property (nonatomic, strong) UIImage* showsImage;
 @end
 
 @implementation NextViewController
+
+-(id)initWithImage:(UIImage *)showImage{
+    
+        self = [super init];
+        if (self)
+        {
+            _showsImage = showImage;
+        }
+        return self;
+    
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor redColor];
+    UIImageView *backImage = [[UIImageView alloc] initWithImage:_showsImage];
+    [backImage setFrame:self.view.bounds];
+    [backImage setContentMode:UIViewContentModeScaleAspectFit];
+    [self.view addSubview:backImage];
     UIButton *butt = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     
     [butt setFrame:CGRectMake(60, 100, 120, 100)];
@@ -27,8 +43,11 @@
 }
 
 -(void)back{
+//    [self dismissViewControllerAnimated:NO completion:^{
     
-    [self.navigationController popViewControllerAnimated:YES];
+        [self.navigationController popViewControllerAnimated:YES];
+//    }];
+    
 }
 
 - (void)didReceiveMemoryWarning {
