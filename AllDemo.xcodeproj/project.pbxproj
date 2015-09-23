@@ -20,7 +20,11 @@
 		840CB3801B8EDE24003220D2 /* AlbumTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 840CB37F1B8EDE24003220D2 /* AlbumTableViewCell.m */; };
 		840CB3841B8EECB1003220D2 /* AlbumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 840CB3831B8EECB1003220D2 /* AlbumViewController.m */; };
 		8426F0AA1A888A6800853F61 /* Setting.m in Sources */ = {isa = PBXBuildFile; fileRef = 8426F0A91A888A6800853F61 /* Setting.m */; };
+		844DCDB01BB290D600B50040 /* TimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 844DCDAF1BB290D600B50040 /* TimeViewController.m */; settings = {ASSET_TAGS = (); }; };
+		844DCDB31BB292B000B50040 /* DDHTimerControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 844DCDB21BB292B000B50040 /* DDHTimerControl.m */; settings = {ASSET_TAGS = (); }; };
 		848B4E871BA80036004B1494 /* MixTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848B4E861BA80036004B1494 /* MixTestViewController.m */; settings = {ASSET_TAGS = (); }; };
+		8498B06D1BB1445900382D1E /* SelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8498B06C1BB1445900382D1E /* SelectViewController.m */; settings = {ASSET_TAGS = (); }; };
+		8498B0701BB14DFF00382D1E /* SelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8498B06F1BB14DFF00382D1E /* SelectView.m */; settings = {ASSET_TAGS = (); }; };
 		8499DA2A1B147E520021C873 /* NextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8499DA291B147E520021C873 /* NextViewController.m */; };
 		849E06441A8CB2D90012CBE6 /* CameraCountdownView.m in Sources */ = {isa = PBXBuildFile; fileRef = 849E06431A8CB2D90012CBE6 /* CameraCountdownView.m */; };
 		849E06461A8CB68B0012CBE6 /* 倒计时plus1.png in Resources */ = {isa = PBXBuildFile; fileRef = 849E06451A8CB68B0012CBE6 /* 倒计时plus1.png */; };
@@ -72,8 +76,16 @@
 		840CB3831B8EECB1003220D2 /* AlbumViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumViewController.m; sourceTree = "<group>"; };
 		8426F0A81A888A6800853F61 /* Setting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Setting.h; sourceTree = "<group>"; };
 		8426F0A91A888A6800853F61 /* Setting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Setting.m; sourceTree = "<group>"; };
+		844DCDAE1BB290D600B50040 /* TimeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeViewController.h; sourceTree = "<group>"; };
+		844DCDAF1BB290D600B50040 /* TimeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeViewController.m; sourceTree = "<group>"; };
+		844DCDB11BB292B000B50040 /* DDHTimerControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDHTimerControl.h; sourceTree = "<group>"; };
+		844DCDB21BB292B000B50040 /* DDHTimerControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDHTimerControl.m; sourceTree = "<group>"; };
 		848B4E851BA80036004B1494 /* MixTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MixTestViewController.h; sourceTree = "<group>"; };
 		848B4E861BA80036004B1494 /* MixTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MixTestViewController.m; sourceTree = "<group>"; };
+		8498B06B1BB1445900382D1E /* SelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectViewController.h; sourceTree = "<group>"; };
+		8498B06C1BB1445900382D1E /* SelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectViewController.m; sourceTree = "<group>"; };
+		8498B06E1BB14DFF00382D1E /* SelectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectView.h; sourceTree = "<group>"; };
+		8498B06F1BB14DFF00382D1E /* SelectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectView.m; sourceTree = "<group>"; };
 		8499DA281B147E520021C873 /* NextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NextViewController.h; sourceTree = "<group>"; };
 		8499DA291B147E520021C873 /* NextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NextViewController.m; sourceTree = "<group>"; };
 		849E06421A8CB2D90012CBE6 /* CameraCountdownView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraCountdownView.h; sourceTree = "<group>"; };
@@ -171,6 +183,8 @@
 		02EACA2D183EFC8500780D06 /* IOS7Tests */ = {
 			isa = PBXGroup;
 			children = (
+				844DCDAD1BB290B900B50040 /* time */,
+				8498B06A1BB1442400382D1E /* selectview */,
 				84FE9A721BAFED3100C8752D /* fiveStar */,
 				848B4E841BA8001C004B1494 /* mixpanelTest */,
 				84B3D3121B9D807D006175FD /* collectionview */,
@@ -235,6 +249,17 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		844DCDAD1BB290B900B50040 /* time */ = {
+			isa = PBXGroup;
+			children = (
+				844DCDB11BB292B000B50040 /* DDHTimerControl.h */,
+				844DCDB21BB292B000B50040 /* DDHTimerControl.m */,
+				844DCDAE1BB290D600B50040 /* TimeViewController.h */,
+				844DCDAF1BB290D600B50040 /* TimeViewController.m */,
+			);
+			name = time;
+			sourceTree = "<group>";
+		};
 		848B4E841BA8001C004B1494 /* mixpanelTest */ = {
 			isa = PBXGroup;
 			children = (
@@ -242,6 +267,17 @@
 				848B4E861BA80036004B1494 /* MixTestViewController.m */,
 			);
 			name = mixpanelTest;
+			sourceTree = "<group>";
+		};
+		8498B06A1BB1442400382D1E /* selectview */ = {
+			isa = PBXGroup;
+			children = (
+				8498B06B1BB1445900382D1E /* SelectViewController.h */,
+				8498B06C1BB1445900382D1E /* SelectViewController.m */,
+				8498B06E1BB14DFF00382D1E /* SelectView.h */,
+				8498B06F1BB14DFF00382D1E /* SelectView.m */,
+			);
+			name = selectview;
 			sourceTree = "<group>";
 		};
 		84B3D3111B9D8069006175FD /* cameracountdown */ = {
@@ -418,10 +454,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8498B06D1BB1445900382D1E /* SelectViewController.m in Sources */,
 				84B3D30B1B9D7CAE006175FD /* AdViewController.m in Sources */,
 				84BDBC951B4BCE6F00EFD1F4 /* MTImageScrollView.m in Sources */,
 				84BA6AFA1B1419F80054D05F /* LoaerTwitterCollectionViewFlowLayout.m in Sources */,
 				848B4E871BA80036004B1494 /* MixTestViewController.m in Sources */,
+				844DCDB01BB290D600B50040 /* TimeViewController.m in Sources */,
 				840CB3841B8EECB1003220D2 /* AlbumViewController.m in Sources */,
 				84E23C491B8D609E004A083A /* NetDataViewController.m in Sources */,
 				84BA6AF41B140BB30054D05F /* LoaerCollectionViewController.m in Sources */,
@@ -430,6 +468,7 @@
 				840CB3801B8EDE24003220D2 /* AlbumTableViewCell.m in Sources */,
 				84FE9A751BAFED6600C8752D /* FiveStarViewController.m in Sources */,
 				84BE834E1B8EB37600F96522 /* AlbumsTableViewController.m in Sources */,
+				844DCDB31BB292B000B50040 /* DDHTimerControl.m in Sources */,
 				8499DA2A1B147E520021C873 /* NextViewController.m in Sources */,
 				84BE83571B8EB41E00F96522 /* UIImage+ImageTool.m in Sources */,
 				849E06441A8CB2D90012CBE6 /* CameraCountdownView.m in Sources */,
@@ -437,6 +476,7 @@
 				02EACA61183F014100780D06 /* TestSwipeToPopTwo.m in Sources */,
 				84B3D3151B9D80F4006175FD /* AdDataModel.m in Sources */,
 				8426F0AA1A888A6800853F61 /* Setting.m in Sources */,
+				8498B0701BB14DFF00382D1E /* SelectView.m in Sources */,
 				84BA6AF71B140CC90054D05F /* LoaerCollectionViewCell.m in Sources */,
 				02EACA34183EFC8500780D06 /* main.m in Sources */,
 				84B3D3101B9D803E006175FD /* RequestAdData.m in Sources */,

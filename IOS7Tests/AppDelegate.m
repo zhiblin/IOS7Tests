@@ -13,6 +13,8 @@
 #import "NetDataViewController.h"
 #import "AdViewController.h"
 #import "MixTestViewController.h"
+#import "SelectViewController.h"
+#import "TimeViewController.h"
 
 @implementation AppDelegate
 
@@ -27,8 +29,10 @@
 //    PullViewController *pull = [[PullViewController alloc] init];
 //    NetDataViewController *netdata = [[NetDataViewController alloc] init];
 //    AdViewController *ad = [[AdViewController alloc] init];
-    MixTestViewController *test = [[MixTestViewController alloc] init];
-    UINavigationController *main = [[UINavigationController alloc] initWithRootViewController:test];
+//    MixTestViewController *test = [[MixTestViewController alloc] init];
+//    SelectViewController *s = [[SelectViewController alloc] init];
+    TimeViewController *s = [[TimeViewController alloc] init];
+    UINavigationController *main = [[UINavigationController alloc] initWithRootViewController:s];
     main.navigationBarHidden = YES;
     self.window.rootViewController = main;
     self.window.backgroundColor = [UIColor whiteColor];
