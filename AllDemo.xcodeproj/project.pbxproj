@@ -33,6 +33,7 @@
 		849E064C1A8CB6A10012CBE6 /* 倒计时plus2.png in Resources */ = {isa = PBXBuildFile; fileRef = 849E064A1A8CB6A10012CBE6 /* 倒计时plus2.png */; };
 		849E064F1A8CB6A70012CBE6 /* 倒计时3.png in Resources */ = {isa = PBXBuildFile; fileRef = 849E064D1A8CB6A70012CBE6 /* 倒计时3.png */; };
 		849E06501A8CB6A70012CBE6 /* 倒计时plus3.png in Resources */ = {isa = PBXBuildFile; fileRef = 849E064E1A8CB6A70012CBE6 /* 倒计时plus3.png */; };
+		84A9E5621BCDEE35007991DE /* CreateAlbumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A9E5611BCDEE35007991DE /* CreateAlbumViewController.m */; settings = {ASSET_TAGS = (); }; };
 		84B3D30B1B9D7CAE006175FD /* AdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B3D30A1B9D7CAE006175FD /* AdViewController.m */; };
 		84B3D3101B9D803E006175FD /* RequestAdData.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B3D30F1B9D803E006175FD /* RequestAdData.m */; };
 		84B3D3151B9D80F4006175FD /* AdDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B3D3141B9D80F4006175FD /* AdDataModel.m */; };
@@ -96,6 +97,8 @@
 		849E064A1A8CB6A10012CBE6 /* 倒计时plus2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "倒计时plus2.png"; sourceTree = "<group>"; };
 		849E064D1A8CB6A70012CBE6 /* 倒计时3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "倒计时3.png"; sourceTree = "<group>"; };
 		849E064E1A8CB6A70012CBE6 /* 倒计时plus3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "倒计时plus3.png"; sourceTree = "<group>"; };
+		84A9E5601BCDEE35007991DE /* CreateAlbumViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateAlbumViewController.h; sourceTree = "<group>"; };
+		84A9E5611BCDEE35007991DE /* CreateAlbumViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateAlbumViewController.m; sourceTree = "<group>"; };
 		84B3D3091B9D7CAE006175FD /* AdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdViewController.h; sourceTree = "<group>"; };
 		84B3D30A1B9D7CAE006175FD /* AdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdViewController.m; sourceTree = "<group>"; };
 		84B3D30E1B9D803E006175FD /* RequestAdData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestAdData.h; sourceTree = "<group>"; };
@@ -328,6 +331,8 @@
 				840CB3831B8EECB1003220D2 /* AlbumViewController.m */,
 				84BE83551B8EB41E00F96522 /* UIImage+ImageTool.h */,
 				84BE83561B8EB41E00F96522 /* UIImage+ImageTool.m */,
+				84A9E5601BCDEE35007991DE /* CreateAlbumViewController.h */,
+				84A9E5611BCDEE35007991DE /* CreateAlbumViewController.m */,
 			);
 			name = Pictures;
 			sourceTree = "<group>";
@@ -472,6 +477,7 @@
 				8499DA2A1B147E520021C873 /* NextViewController.m in Sources */,
 				84BE83571B8EB41E00F96522 /* UIImage+ImageTool.m in Sources */,
 				849E06441A8CB2D90012CBE6 /* CameraCountdownView.m in Sources */,
+				84A9E5621BCDEE35007991DE /* CreateAlbumViewController.m in Sources */,
 				84BB73081A89ADC000D1DC66 /* POPAnimatableProperty+Masonry.m in Sources */,
 				02EACA61183F014100780D06 /* TestSwipeToPopTwo.m in Sources */,
 				84B3D3151B9D80F4006175FD /* AdDataModel.m in Sources */,
