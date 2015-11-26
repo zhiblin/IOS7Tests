@@ -17,6 +17,7 @@
 #import "TimeViewController.h"
 #import "CreateAlbumViewController.h"
 #import "MainViewController.h"
+#import "QRViewController.h"
 
 @implementation AppDelegate
 
@@ -35,7 +36,8 @@
 //    SelectViewController *s = [[SelectViewController alloc] init];
 //    TimeViewController *s = [[TimeViewController alloc] init];
 //    CreateAlbumViewController *a = [[CreateAlbumViewController alloc] init];
-    MainViewController *mainview = [[MainViewController alloc] init];
+    QRViewController *mainview = [[QRViewController alloc] init];
+//    MainViewController *mainview = [[MainViewController alloc] init];
     UINavigationController *main = [[UINavigationController alloc] initWithRootViewController:mainview];
     main.navigationBarHidden = YES;
     self.window.rootViewController = main;

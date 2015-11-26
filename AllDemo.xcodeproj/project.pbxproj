@@ -52,6 +52,7 @@
 		84ED36341AA5BC5B00AFEACB /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84ED36331AA5BC5B00AFEACB /* AVFoundation.framework */; };
 		84ED36361AA5BC9E00AFEACB /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84ED36351AA5BC9E00AFEACB /* MobileCoreServices.framework */; };
 		84FE9A751BAFED6600C8752D /* FiveStarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FE9A741BAFED6600C8752D /* FiveStarViewController.m */; };
+		84FF989C1C06EB1400BBA80A /* QRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FF989B1C06EB1400BBA80A /* QRViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -137,6 +138,8 @@
 		84ED36351AA5BC9E00AFEACB /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		84FE9A731BAFED6600C8752D /* FiveStarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FiveStarViewController.h; sourceTree = "<group>"; };
 		84FE9A741BAFED6600C8752D /* FiveStarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FiveStarViewController.m; sourceTree = "<group>"; };
+		84FF989A1C06EB1400BBA80A /* QRViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRViewController.h; sourceTree = "<group>"; };
+		84FF989B1C06EB1400BBA80A /* QRViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRViewController.m; sourceTree = "<group>"; };
 		9E5906AB5C8C85374ADD9701 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		BEF077E5FB6006EC409E7894 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0E48BA6D0057B0DD3A81A35 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -195,6 +198,7 @@
 		02EACA2D183EFC8500780D06 /* IOS7Tests */ = {
 			isa = PBXGroup;
 			children = (
+				84FF98991C06EAF900BBA80A /* qrcode */,
 				84EA33291BEB57E000E89094 /* alert */,
 				844DCDAD1BB290B900B50040 /* time */,
 				8498B06A1BB1442400382D1E /* selectview */,
@@ -369,6 +373,15 @@
 			name = fiveStar;
 			sourceTree = "<group>";
 		};
+		84FF98991C06EAF900BBA80A /* qrcode */ = {
+			isa = PBXGroup;
+			children = (
+				84FF989A1C06EB1400BBA80A /* QRViewController.h */,
+				84FF989B1C06EB1400BBA80A /* QRViewController.m */,
+			);
+			name = qrcode;
+			sourceTree = "<group>";
+		};
 		9CB9FB3EC67903B797DC1850 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -502,6 +515,7 @@
 				84FE9A751BAFED6600C8752D /* FiveStarViewController.m in Sources */,
 				84BE834E1B8EB37600F96522 /* AlbumsTableViewController.m in Sources */,
 				844DCDB31BB292B000B50040 /* DDHTimerControl.m in Sources */,
+				84FF989C1C06EB1400BBA80A /* QRViewController.m in Sources */,
 				8499DA2A1B147E520021C873 /* NextViewController.m in Sources */,
 				84BE83571B8EB41E00F96522 /* UIImage+ImageTool.m in Sources */,
 				849E06441A8CB2D90012CBE6 /* CameraCountdownView.m in Sources */,
