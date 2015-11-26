@@ -20,11 +20,11 @@
 		840CB3801B8EDE24003220D2 /* AlbumTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 840CB37F1B8EDE24003220D2 /* AlbumTableViewCell.m */; };
 		840CB3841B8EECB1003220D2 /* AlbumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 840CB3831B8EECB1003220D2 /* AlbumViewController.m */; };
 		8426F0AA1A888A6800853F61 /* Setting.m in Sources */ = {isa = PBXBuildFile; fileRef = 8426F0A91A888A6800853F61 /* Setting.m */; };
-		844DCDB01BB290D600B50040 /* TimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 844DCDAF1BB290D600B50040 /* TimeViewController.m */; settings = {ASSET_TAGS = (); }; };
-		844DCDB31BB292B000B50040 /* DDHTimerControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 844DCDB21BB292B000B50040 /* DDHTimerControl.m */; settings = {ASSET_TAGS = (); }; };
-		848B4E871BA80036004B1494 /* MixTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848B4E861BA80036004B1494 /* MixTestViewController.m */; settings = {ASSET_TAGS = (); }; };
-		8498B06D1BB1445900382D1E /* SelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8498B06C1BB1445900382D1E /* SelectViewController.m */; settings = {ASSET_TAGS = (); }; };
-		8498B0701BB14DFF00382D1E /* SelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8498B06F1BB14DFF00382D1E /* SelectView.m */; settings = {ASSET_TAGS = (); }; };
+		844DCDB01BB290D600B50040 /* TimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 844DCDAF1BB290D600B50040 /* TimeViewController.m */; };
+		844DCDB31BB292B000B50040 /* DDHTimerControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 844DCDB21BB292B000B50040 /* DDHTimerControl.m */; };
+		848B4E871BA80036004B1494 /* MixTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848B4E861BA80036004B1494 /* MixTestViewController.m */; };
+		8498B06D1BB1445900382D1E /* SelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8498B06C1BB1445900382D1E /* SelectViewController.m */; };
+		8498B0701BB14DFF00382D1E /* SelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8498B06F1BB14DFF00382D1E /* SelectView.m */; };
 		8499DA2A1B147E520021C873 /* NextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8499DA291B147E520021C873 /* NextViewController.m */; };
 		849E06441A8CB2D90012CBE6 /* CameraCountdownView.m in Sources */ = {isa = PBXBuildFile; fileRef = 849E06431A8CB2D90012CBE6 /* CameraCountdownView.m */; };
 		849E06461A8CB68B0012CBE6 /* 倒计时plus1.png in Resources */ = {isa = PBXBuildFile; fileRef = 849E06451A8CB68B0012CBE6 /* 倒计时plus1.png */; };
@@ -33,7 +33,7 @@
 		849E064C1A8CB6A10012CBE6 /* 倒计时plus2.png in Resources */ = {isa = PBXBuildFile; fileRef = 849E064A1A8CB6A10012CBE6 /* 倒计时plus2.png */; };
 		849E064F1A8CB6A70012CBE6 /* 倒计时3.png in Resources */ = {isa = PBXBuildFile; fileRef = 849E064D1A8CB6A70012CBE6 /* 倒计时3.png */; };
 		849E06501A8CB6A70012CBE6 /* 倒计时plus3.png in Resources */ = {isa = PBXBuildFile; fileRef = 849E064E1A8CB6A70012CBE6 /* 倒计时plus3.png */; };
-		84A9E5621BCDEE35007991DE /* CreateAlbumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A9E5611BCDEE35007991DE /* CreateAlbumViewController.m */; settings = {ASSET_TAGS = (); }; };
+		84A9E5621BCDEE35007991DE /* CreateAlbumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A9E5611BCDEE35007991DE /* CreateAlbumViewController.m */; };
 		84B3D30B1B9D7CAE006175FD /* AdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B3D30A1B9D7CAE006175FD /* AdViewController.m */; };
 		84B3D3101B9D803E006175FD /* RequestAdData.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B3D30F1B9D803E006175FD /* RequestAdData.m */; };
 		84B3D3151B9D80F4006175FD /* AdDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B3D3141B9D80F4006175FD /* AdDataModel.m */; };
@@ -46,9 +46,12 @@
 		84BE83571B8EB41E00F96522 /* UIImage+ImageTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BE83561B8EB41E00F96522 /* UIImage+ImageTool.m */; };
 		84E23C491B8D609E004A083A /* NetDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E23C481B8D609E004A083A /* NetDataViewController.m */; };
 		84E572111B43DD5600815262 /* PullViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E572101B43DD5600815262 /* PullViewController.m */; };
+		84EA332E1BEB57F400E89094 /* MTAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EA332B1BEB57F400E89094 /* MTAlert.m */; };
+		84EA332F1BEB57F400E89094 /* MTAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EA332D1BEB57F400E89094 /* MTAlertViewController.m */; };
+		84EA33321BEB585A00E89094 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EA33311BEB585A00E89094 /* MainViewController.m */; };
 		84ED36341AA5BC5B00AFEACB /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84ED36331AA5BC5B00AFEACB /* AVFoundation.framework */; };
 		84ED36361AA5BC9E00AFEACB /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84ED36351AA5BC9E00AFEACB /* MobileCoreServices.framework */; };
-		84FE9A751BAFED6600C8752D /* FiveStarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FE9A741BAFED6600C8752D /* FiveStarViewController.m */; settings = {ASSET_TAGS = (); }; };
+		84FE9A751BAFED6600C8752D /* FiveStarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FE9A741BAFED6600C8752D /* FiveStarViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -124,6 +127,12 @@
 		84E23C481B8D609E004A083A /* NetDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetDataViewController.m; sourceTree = "<group>"; };
 		84E5720F1B43DD5600815262 /* PullViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PullViewController.h; sourceTree = "<group>"; };
 		84E572101B43DD5600815262 /* PullViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PullViewController.m; sourceTree = "<group>"; };
+		84EA332A1BEB57F400E89094 /* MTAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTAlert.h; sourceTree = "<group>"; };
+		84EA332B1BEB57F400E89094 /* MTAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTAlert.m; sourceTree = "<group>"; };
+		84EA332C1BEB57F400E89094 /* MTAlertViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTAlertViewController.h; sourceTree = "<group>"; };
+		84EA332D1BEB57F400E89094 /* MTAlertViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTAlertViewController.m; sourceTree = "<group>"; };
+		84EA33301BEB585A00E89094 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		84EA33311BEB585A00E89094 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		84ED36331AA5BC5B00AFEACB /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		84ED36351AA5BC9E00AFEACB /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		84FE9A731BAFED6600C8752D /* FiveStarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FiveStarViewController.h; sourceTree = "<group>"; };
@@ -186,6 +195,7 @@
 		02EACA2D183EFC8500780D06 /* IOS7Tests */ = {
 			isa = PBXGroup;
 			children = (
+				84EA33291BEB57E000E89094 /* alert */,
 				844DCDAD1BB290B900B50040 /* time */,
 				8498B06A1BB1442400382D1E /* selectview */,
 				84FE9A721BAFED3100C8752D /* fiveStar */,
@@ -204,6 +214,8 @@
 				84E5720F1B43DD5600815262 /* PullViewController.h */,
 				84E572101B43DD5600815262 /* PullViewController.m */,
 				8426F0A81A888A6800853F61 /* Setting.h */,
+				84EA33301BEB585A00E89094 /* MainViewController.h */,
+				84EA33311BEB585A00E89094 /* MainViewController.m */,
 				8426F0A91A888A6800853F61 /* Setting.m */,
 				02EACA5C183F00B300780D06 /* TestSwipeToPopOne.h */,
 				02EACA5D183F00B300780D06 /* TestSwipeToPopOne.m */,
@@ -337,6 +349,17 @@
 			name = Pictures;
 			sourceTree = "<group>";
 		};
+		84EA33291BEB57E000E89094 /* alert */ = {
+			isa = PBXGroup;
+			children = (
+				84EA332A1BEB57F400E89094 /* MTAlert.h */,
+				84EA332B1BEB57F400E89094 /* MTAlert.m */,
+				84EA332C1BEB57F400E89094 /* MTAlertViewController.h */,
+				84EA332D1BEB57F400E89094 /* MTAlertViewController.m */,
+			);
+			name = alert;
+			sourceTree = "<group>";
+		};
 		84FE9A721BAFED3100C8752D /* fiveStar */ = {
 			isa = PBXGroup;
 			children = (
@@ -385,6 +408,11 @@
 			attributes = {
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = loaer;
+				TargetAttributes = {
+					02EACA23183EFC8500780D06 = {
+						DevelopmentTeam = 2V3T4T4V4S;
+					};
+				};
 			};
 			buildConfigurationList = 02EACA1F183EFC8500780D06 /* Build configuration list for PBXProject "AllDemo" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -477,15 +505,18 @@
 				8499DA2A1B147E520021C873 /* NextViewController.m in Sources */,
 				84BE83571B8EB41E00F96522 /* UIImage+ImageTool.m in Sources */,
 				849E06441A8CB2D90012CBE6 /* CameraCountdownView.m in Sources */,
+				84EA332E1BEB57F400E89094 /* MTAlert.m in Sources */,
 				84A9E5621BCDEE35007991DE /* CreateAlbumViewController.m in Sources */,
 				84BB73081A89ADC000D1DC66 /* POPAnimatableProperty+Masonry.m in Sources */,
 				02EACA61183F014100780D06 /* TestSwipeToPopTwo.m in Sources */,
 				84B3D3151B9D80F4006175FD /* AdDataModel.m in Sources */,
+				84EA33321BEB585A00E89094 /* MainViewController.m in Sources */,
 				8426F0AA1A888A6800853F61 /* Setting.m in Sources */,
 				8498B0701BB14DFF00382D1E /* SelectView.m in Sources */,
 				84BA6AF71B140CC90054D05F /* LoaerCollectionViewCell.m in Sources */,
 				02EACA34183EFC8500780D06 /* main.m in Sources */,
 				84B3D3101B9D803E006175FD /* RequestAdData.m in Sources */,
+				84EA332F1BEB57F400E89094 /* MTAlertViewController.m in Sources */,
 				84E572111B43DD5600815262 /* PullViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -590,9 +621,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "IOS7Tests/IOS7Tests-Prefix.pch";
 				INFOPLIST_FILE = "IOS7Tests/IOS7Tests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.devtest.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
@@ -605,9 +638,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "IOS7Tests/IOS7Tests-Prefix.pch";
 				INFOPLIST_FILE = "IOS7Tests/IOS7Tests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.devtest.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;

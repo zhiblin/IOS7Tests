@@ -16,6 +16,7 @@
 #import "SelectViewController.h"
 #import "TimeViewController.h"
 #import "CreateAlbumViewController.h"
+#import "MainViewController.h"
 
 @implementation AppDelegate
 
@@ -33,8 +34,9 @@
 //    MixTestViewController *test = [[MixTestViewController alloc] init];
 //    SelectViewController *s = [[SelectViewController alloc] init];
 //    TimeViewController *s = [[TimeViewController alloc] init];
-    CreateAlbumViewController *a = [[CreateAlbumViewController alloc] init];
-    UINavigationController *main = [[UINavigationController alloc] initWithRootViewController:a];
+//    CreateAlbumViewController *a = [[CreateAlbumViewController alloc] init];
+    MainViewController *mainview = [[MainViewController alloc] init];
+    UINavigationController *main = [[UINavigationController alloc] initWithRootViewController:mainview];
     main.navigationBarHidden = YES;
     self.window.rootViewController = main;
     self.window.backgroundColor = [UIColor whiteColor];
