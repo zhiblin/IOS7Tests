@@ -34,6 +34,8 @@
 		849E064F1A8CB6A70012CBE6 /* 倒计时3.png in Resources */ = {isa = PBXBuildFile; fileRef = 849E064D1A8CB6A70012CBE6 /* 倒计时3.png */; };
 		849E06501A8CB6A70012CBE6 /* 倒计时plus3.png in Resources */ = {isa = PBXBuildFile; fileRef = 849E064E1A8CB6A70012CBE6 /* 倒计时plus3.png */; };
 		84A9E5621BCDEE35007991DE /* CreateAlbumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A9E5611BCDEE35007991DE /* CreateAlbumViewController.m */; };
+		84B0F9BC1C0D973A0080C174 /* FaceDetectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B0F9BA1C0D973A0080C174 /* FaceDetectViewController.m */; };
+		84B0F9BD1C0D973A0080C174 /* FaceDetectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84B0F9BB1C0D973A0080C174 /* FaceDetectViewController.xib */; };
 		84B3D30B1B9D7CAE006175FD /* AdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B3D30A1B9D7CAE006175FD /* AdViewController.m */; };
 		84B3D3101B9D803E006175FD /* RequestAdData.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B3D30F1B9D803E006175FD /* RequestAdData.m */; };
 		84B3D3151B9D80F4006175FD /* AdDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B3D3141B9D80F4006175FD /* AdDataModel.m */; };
@@ -103,6 +105,9 @@
 		849E064E1A8CB6A70012CBE6 /* 倒计时plus3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "倒计时plus3.png"; sourceTree = "<group>"; };
 		84A9E5601BCDEE35007991DE /* CreateAlbumViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateAlbumViewController.h; sourceTree = "<group>"; };
 		84A9E5611BCDEE35007991DE /* CreateAlbumViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateAlbumViewController.m; sourceTree = "<group>"; };
+		84B0F9B91C0D973A0080C174 /* FaceDetectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceDetectViewController.h; sourceTree = "<group>"; };
+		84B0F9BA1C0D973A0080C174 /* FaceDetectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaceDetectViewController.m; sourceTree = "<group>"; };
+		84B0F9BB1C0D973A0080C174 /* FaceDetectViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FaceDetectViewController.xib; sourceTree = "<group>"; };
 		84B3D3091B9D7CAE006175FD /* AdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdViewController.h; sourceTree = "<group>"; };
 		84B3D30A1B9D7CAE006175FD /* AdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdViewController.m; sourceTree = "<group>"; };
 		84B3D30E1B9D803E006175FD /* RequestAdData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestAdData.h; sourceTree = "<group>"; };
@@ -198,6 +203,7 @@
 		02EACA2D183EFC8500780D06 /* IOS7Tests */ = {
 			isa = PBXGroup;
 			children = (
+				84B0F9B81C0D96FA0080C174 /* FaceDetect */,
 				84FF98991C06EAF900BBA80A /* qrcode */,
 				84EA33291BEB57E000E89094 /* alert */,
 				844DCDAD1BB290B900B50040 /* time */,
@@ -297,6 +303,16 @@
 				8498B06F1BB14DFF00382D1E /* SelectView.m */,
 			);
 			name = selectview;
+			sourceTree = "<group>";
+		};
+		84B0F9B81C0D96FA0080C174 /* FaceDetect */ = {
+			isa = PBXGroup;
+			children = (
+				84B0F9B91C0D973A0080C174 /* FaceDetectViewController.h */,
+				84B0F9BA1C0D973A0080C174 /* FaceDetectViewController.m */,
+				84B0F9BB1C0D973A0080C174 /* FaceDetectViewController.xib */,
+			);
+			name = FaceDetect;
 			sourceTree = "<group>";
 		};
 		84B3D3111B9D8069006175FD /* cameracountdown */ = {
@@ -451,6 +467,7 @@
 			files = (
 				02EACA32183EFC8500780D06 /* InfoPlist.strings in Resources */,
 				849E064B1A8CB6A10012CBE6 /* 倒计时2.png in Resources */,
+				84B0F9BD1C0D973A0080C174 /* FaceDetectViewController.xib in Resources */,
 				849E06481A8CB6990012CBE6 /* 倒计时1.png in Resources */,
 				849E06461A8CB68B0012CBE6 /* 倒计时plus1.png in Resources */,
 				849E064C1A8CB6A10012CBE6 /* 倒计时plus2.png in Resources */,
@@ -525,6 +542,7 @@
 				02EACA61183F014100780D06 /* TestSwipeToPopTwo.m in Sources */,
 				84B3D3151B9D80F4006175FD /* AdDataModel.m in Sources */,
 				84EA33321BEB585A00E89094 /* MainViewController.m in Sources */,
+				84B0F9BC1C0D973A0080C174 /* FaceDetectViewController.m in Sources */,
 				8426F0AA1A888A6800853F61 /* Setting.m in Sources */,
 				8498B0701BB14DFF00382D1E /* SelectView.m in Sources */,
 				84BA6AF71B140CC90054D05F /* LoaerCollectionViewCell.m in Sources */,
