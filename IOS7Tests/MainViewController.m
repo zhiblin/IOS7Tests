@@ -8,8 +8,18 @@
 
 #import "MainViewController.h"
 #import "MTAlertViewController.h"
+#import "KlineView.h"
 
-@interface MainViewController ()
+@interface MainViewController()<KMapViewDataSource,TSLinesViewDelegate> {
+    KlineView *kMapView;
+    
+    
+    NSMutableArray *array1;
+    NSMutableArray *array2;
+    NSMutableArray *array3;
+    CGFloat data;
+}
+
 
 @property(nonatomic, strong) NSMutableArray *beforeData;
 
@@ -23,7 +33,96 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.view.backgroundColor = [UIColor blackColor];
+    [self kline];
+    
+}
+
+-(void)kline{
+    kMapView = [[KlineView alloc] init];
+    kMapView.frame = CGRectMake(0, 100, self.view.frame.size.width, 350);
+    kMapView.xAxisLbArr = @[@"1",@"11",@"111",@"1111",@"11111"];
+    kMapView.yAxisLbArr = @[@"5",@"4",@"3",@"2",@"1"];
+    kMapView.needToDrawRightAxisLb = NO;
+    kMapView.showLastValue = YES;
+    kMapView.kMapViewDataSource = self;
+    kMapView.delegate = self;
+    [self.view addSubview:kMapView];
+    
+    array1 = [[NSMutableArray alloc] init];
+    array2 = [[NSMutableArray alloc] init];
+    array3 = [[NSMutableArray alloc] init];
+    
+    data = 2.0f;
+    [array3 addObject:[NSNumber numberWithFloat:data]];
+    for (int i = 0; i< 23; i ++) {
+        CGFloat offset = (random()%100 - 50)/100.0f;
+        [array1 addObject:[NSNumber numberWithFloat:offset]];
+        data += offset;
+        [array3 addObject:[NSNumber numberWithFloat:data]];
+        offset = (random()%100)/300.0f;
+        [array2 addObject:[NSNumber numberWithFloat:offset]];
+        
+    }
+
+}
+
+//点的总数
+- (NSInteger)summationOfkPointForKMapView:(KlineView*)kMapView{
+    return 22;
+}
+//需要绘制的点的数量
+- (NSInteger)numberOfkPointToDrawForKMapView:(KlineView*)kMapView{
+    return 22;
+}
+//需要绘制的点
+- (KlineItem *)kMapView:(KlineView*)kMapView kMapPointViewAtIndex:(NSInteger)index{
+    
+    
+    CGFloat start = [array3[index] floatValue];
+    CGFloat end = start + [array1[index] floatValue];
+    CGFloat max = start + [array2[index] floatValue];
+    CGFloat min = end - [array2[21 - index] floatValue];
+    if(start < end){
+        max = end + [array2[index] floatValue];
+        min = start - [array2[21 - index] floatValue];
+    }
+    
+    
+    KlineItem *view = [[KlineItem alloc] initWithMaxValue:max  MinValue:min  StartValue:start EndValue:end];
+    return view;
+}
+- (NSInteger)offsetOfGridForKMapView:(KlineView *)kMapView{
+    return 3;
+}
+- (NSInteger)numberOfLinesForKMapView:(KlineView*)kMapView{
+    return 1;
+}
+- (UIColor *)kMapView:(KlineView*)kMapView colorsForLinesAtIndex:(NSInteger)index{
+    return [UIColor blueColor];
+}
+- (NSInteger)kMapView:(KlineView*)kMapView summationOfkPointForlinesAtIndex:(NSInteger)index{
+    return 22;
+}
+- (NSInteger)kMapView:(KlineView*)kMapView numberOfkPointToDrawForlinesAtIndex:(NSInteger)index{
+    return 22;
+}
+
+- (CGFloat )kMapView:(KlineView*)kMapView valueForLinesAtIndexPath:(NSIndexPath *)indexPath{
+    
+    return [array3[indexPath.row] floatValue] + [array1[indexPath.row] floatValue];
+}
+
+- (NSString*)linesView:(TouchLineView*)linesView touchLableAtIndex:(NSInteger)index{
+    return @"123";
+}
+
+
+
+
+
+
+-(void)something{
     
     UIButton *butt = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     
@@ -54,8 +153,6 @@
     for (NSString *i in beforeData) {
         NSLog(@"bbb%@",i);
     }
-    
-//    [self gi];
 }
 
 -(void)gi{

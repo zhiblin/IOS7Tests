@@ -55,6 +55,11 @@
 		84ED36361AA5BC9E00AFEACB /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84ED36351AA5BC9E00AFEACB /* MobileCoreServices.framework */; };
 		84FE9A751BAFED6600C8752D /* FiveStarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FE9A741BAFED6600C8752D /* FiveStarViewController.m */; };
 		84FF989C1C06EB1400BBA80A /* QRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FF989B1C06EB1400BBA80A /* QRViewController.m */; };
+		F10B67D41CA13BAD001B415C /* BaseLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = F10B67D31CA13BAD001B415C /* BaseLineView.m */; };
+		F10B67D71CA1446B001B415C /* TouchLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = F10B67D61CA1446B001B415C /* TouchLineView.m */; };
+		F10B67DA1CA14645001B415C /* KlineView.m in Sources */ = {isa = PBXBuildFile; fileRef = F10B67D91CA14645001B415C /* KlineView.m */; };
+		F10B67DD1CA1466F001B415C /* KlineItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F10B67DC1CA1466F001B415C /* KlineItem.m */; };
+		F1AABB051CA277F100A9784B /* Kitem.m in Sources */ = {isa = PBXBuildFile; fileRef = F1AABB041CA277F100A9784B /* Kitem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -148,6 +153,16 @@
 		9E5906AB5C8C85374ADD9701 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		BEF077E5FB6006EC409E7894 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0E48BA6D0057B0DD3A81A35 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		F10B67D21CA13BAD001B415C /* BaseLineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseLineView.h; sourceTree = "<group>"; };
+		F10B67D31CA13BAD001B415C /* BaseLineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseLineView.m; sourceTree = "<group>"; };
+		F10B67D51CA1446B001B415C /* TouchLineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchLineView.h; sourceTree = "<group>"; };
+		F10B67D61CA1446B001B415C /* TouchLineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchLineView.m; sourceTree = "<group>"; };
+		F10B67D81CA14645001B415C /* KlineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KlineView.h; sourceTree = "<group>"; };
+		F10B67D91CA14645001B415C /* KlineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KlineView.m; sourceTree = "<group>"; };
+		F10B67DB1CA1466F001B415C /* KlineItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KlineItem.h; sourceTree = "<group>"; };
+		F10B67DC1CA1466F001B415C /* KlineItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KlineItem.m; sourceTree = "<group>"; };
+		F1AABB031CA277F100A9784B /* Kitem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Kitem.h; sourceTree = "<group>"; };
+		F1AABB041CA277F100A9784B /* Kitem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Kitem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,6 +218,9 @@
 		02EACA2D183EFC8500780D06 /* IOS7Tests */ = {
 			isa = PBXGroup;
 			children = (
+				F1AABB021CA2777200A9784B /* Other */,
+				F1AABB011CA2775500A9784B /* NetData */,
+				F10B67D11CA13B75001B415C /* KLine */,
 				84B0F9B81C0D96FA0080C174 /* FaceDetect */,
 				84FF98991C06EAF900BBA80A /* qrcode */,
 				84EA33291BEB57E000E89094 /* alert */,
@@ -214,31 +232,10 @@
 				84B3D3111B9D8069006175FD /* cameracountdown */,
 				84BE834B1B8EB31300F96522 /* Pictures */,
 				84BDBC921B4BCE6F00EFD1F4 /* imageScrollView */,
-				84BB73051A89ADC000D1DC66 /* MSSPopMasonry.h */,
-				84BB73061A89ADC000D1DC66 /* POPAnimatableProperty+Masonry.h */,
-				84BB73071A89ADC000D1DC66 /* POPAnimatableProperty+Masonry.m */,
-				8499DA281B147E520021C873 /* NextViewController.h */,
-				8499DA291B147E520021C873 /* NextViewController.m */,
-				02EACA36183EFC8500780D06 /* AppDelegate.h */,
-				02EACA37183EFC8500780D06 /* AppDelegate.m */,
-				84E5720F1B43DD5600815262 /* PullViewController.h */,
-				84E572101B43DD5600815262 /* PullViewController.m */,
-				8426F0A81A888A6800853F61 /* Setting.h */,
 				84EA33301BEB585A00E89094 /* MainViewController.h */,
 				84EA33311BEB585A00E89094 /* MainViewController.m */,
-				8426F0A91A888A6800853F61 /* Setting.m */,
-				02EACA5C183F00B300780D06 /* TestSwipeToPopOne.h */,
-				02EACA5D183F00B300780D06 /* TestSwipeToPopOne.m */,
-				02EACA5F183F014100780D06 /* TestSwipeToPopTwo.h */,
-				02EACA60183F014100780D06 /* TestSwipeToPopTwo.m */,
-				84E23C471B8D609E004A083A /* NetDataViewController.h */,
-				84E23C481B8D609E004A083A /* NetDataViewController.m */,
-				84B3D3091B9D7CAE006175FD /* AdViewController.h */,
-				84B3D30A1B9D7CAE006175FD /* AdViewController.m */,
-				84B3D30E1B9D803E006175FD /* RequestAdData.h */,
-				84B3D30F1B9D803E006175FD /* RequestAdData.m */,
-				84B3D3131B9D80F4006175FD /* AdDataModel.h */,
-				84B3D3141B9D80F4006175FD /* AdDataModel.m */,
+				02EACA36183EFC8500780D06 /* AppDelegate.h */,
+				02EACA37183EFC8500780D06 /* AppDelegate.m */,
 				02EACA39183EFC8500780D06 /* Images.xcassets */,
 				02EACA2E183EFC8500780D06 /* Supporting Files */,
 			);
@@ -407,6 +404,58 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		F10B67D11CA13B75001B415C /* KLine */ = {
+			isa = PBXGroup;
+			children = (
+				F10B67D21CA13BAD001B415C /* BaseLineView.h */,
+				F10B67D31CA13BAD001B415C /* BaseLineView.m */,
+				F10B67D51CA1446B001B415C /* TouchLineView.h */,
+				F10B67D61CA1446B001B415C /* TouchLineView.m */,
+				F10B67D81CA14645001B415C /* KlineView.h */,
+				F10B67D91CA14645001B415C /* KlineView.m */,
+				F10B67DB1CA1466F001B415C /* KlineItem.h */,
+				F10B67DC1CA1466F001B415C /* KlineItem.m */,
+				F1AABB031CA277F100A9784B /* Kitem.h */,
+				F1AABB041CA277F100A9784B /* Kitem.m */,
+			);
+			name = KLine;
+			sourceTree = "<group>";
+		};
+		F1AABB011CA2775500A9784B /* NetData */ = {
+			isa = PBXGroup;
+			children = (
+				84E23C471B8D609E004A083A /* NetDataViewController.h */,
+				84E23C481B8D609E004A083A /* NetDataViewController.m */,
+				84B3D3091B9D7CAE006175FD /* AdViewController.h */,
+				84B3D30A1B9D7CAE006175FD /* AdViewController.m */,
+				84B3D30E1B9D803E006175FD /* RequestAdData.h */,
+				84B3D30F1B9D803E006175FD /* RequestAdData.m */,
+				84B3D3131B9D80F4006175FD /* AdDataModel.h */,
+				84B3D3141B9D80F4006175FD /* AdDataModel.m */,
+			);
+			name = NetData;
+			sourceTree = "<group>";
+		};
+		F1AABB021CA2777200A9784B /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				02EACA5C183F00B300780D06 /* TestSwipeToPopOne.h */,
+				02EACA5D183F00B300780D06 /* TestSwipeToPopOne.m */,
+				02EACA5F183F014100780D06 /* TestSwipeToPopTwo.h */,
+				02EACA60183F014100780D06 /* TestSwipeToPopTwo.m */,
+				84BB73051A89ADC000D1DC66 /* MSSPopMasonry.h */,
+				84BB73061A89ADC000D1DC66 /* POPAnimatableProperty+Masonry.h */,
+				84BB73071A89ADC000D1DC66 /* POPAnimatableProperty+Masonry.m */,
+				8499DA281B147E520021C873 /* NextViewController.h */,
+				8499DA291B147E520021C873 /* NextViewController.m */,
+				84E5720F1B43DD5600815262 /* PullViewController.h */,
+				84E572101B43DD5600815262 /* PullViewController.m */,
+				8426F0A81A888A6800853F61 /* Setting.h */,
+				8426F0A91A888A6800853F61 /* Setting.m */,
+			);
+			name = Other;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -517,6 +566,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F10B67DD1CA1466F001B415C /* KlineItem.m in Sources */,
 				8498B06D1BB1445900382D1E /* SelectViewController.m in Sources */,
 				84B3D30B1B9D7CAE006175FD /* AdViewController.m in Sources */,
 				84BDBC951B4BCE6F00EFD1F4 /* MTImageScrollView.m in Sources */,
@@ -536,17 +586,21 @@
 				8499DA2A1B147E520021C873 /* NextViewController.m in Sources */,
 				84BE83571B8EB41E00F96522 /* UIImage+ImageTool.m in Sources */,
 				849E06441A8CB2D90012CBE6 /* CameraCountdownView.m in Sources */,
+				F10B67D71CA1446B001B415C /* TouchLineView.m in Sources */,
 				84EA332E1BEB57F400E89094 /* MTAlert.m in Sources */,
 				84A9E5621BCDEE35007991DE /* CreateAlbumViewController.m in Sources */,
 				84BB73081A89ADC000D1DC66 /* POPAnimatableProperty+Masonry.m in Sources */,
 				02EACA61183F014100780D06 /* TestSwipeToPopTwo.m in Sources */,
+				F10B67D41CA13BAD001B415C /* BaseLineView.m in Sources */,
 				84B3D3151B9D80F4006175FD /* AdDataModel.m in Sources */,
 				84EA33321BEB585A00E89094 /* MainViewController.m in Sources */,
 				84B0F9BC1C0D973A0080C174 /* FaceDetectViewController.m in Sources */,
+				F10B67DA1CA14645001B415C /* KlineView.m in Sources */,
 				8426F0AA1A888A6800853F61 /* Setting.m in Sources */,
 				8498B0701BB14DFF00382D1E /* SelectView.m in Sources */,
 				84BA6AF71B140CC90054D05F /* LoaerCollectionViewCell.m in Sources */,
 				02EACA34183EFC8500780D06 /* main.m in Sources */,
+				F1AABB051CA277F100A9784B /* Kitem.m in Sources */,
 				84B3D3101B9D803E006175FD /* RequestAdData.m in Sources */,
 				84EA332F1BEB57F400E89094 /* MTAlertViewController.m in Sources */,
 				84E572111B43DD5600815262 /* PullViewController.m in Sources */,

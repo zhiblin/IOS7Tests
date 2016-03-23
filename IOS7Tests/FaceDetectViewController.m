@@ -117,7 +117,6 @@
     actionSheet.actionSheetStyle = UIActionSheetStyleDefault;
     
     [actionSheet showInView:self.view];
-    [actionSheet release];
 }
 
 //将图片切成正方形，按照人脸来决定剪切的范围,多个人脸，仅按照一个人脸来决定
@@ -129,7 +128,6 @@
                                              cancelButtonTitle:@"Ok"
                                              otherButtonTitles:nil, nil];
         [alert show];
-        [alert release];
     }
     else
     {
@@ -177,7 +175,6 @@
             picker.delegate = self;
             picker.allowsEditing = NO;
             [self presentModalViewController:picker animated:YES];
-            [picker release];
         }
     } 
     else {
@@ -232,7 +229,6 @@
                                              cancelButtonTitle:@"Ok"
                                              otherButtonTitles:nil, nil];
         [alert show];
-        [alert release];
         return;
     }
 
@@ -248,7 +244,6 @@
         vv.backgroundColor = [UIColor redColor];
         vv.alpha = 0.6;
         [self.viewShow addSubview:vv];
-        [vv release];
         
         rectFaceDetect = aRect;
         
@@ -268,7 +263,6 @@
             [vv setTransform:CGAffineTransformMakeScale(1, -1)];
             vv.alpha = 0.6;
             [self.viewShow addSubview:vv];
-            [vv release];
         }
         if (f.hasRightEyePosition)
         {
@@ -285,7 +279,6 @@
             [vv setTransform:CGAffineTransformMakeScale(1, -1)];
             vv.alpha = 0.6;
             [self.viewShow addSubview:vv];
-            [vv release];
         }
         if (f.hasMouthPosition)
         {
@@ -302,7 +295,6 @@
             [vv setTransform:CGAffineTransformMakeScale(1, -1)];
             vv.alpha = 0.6;
             [self.viewShow addSubview:vv];
-            [vv release];
             
         }
     }
@@ -411,7 +403,6 @@
 	self.view.userInteractionEnabled = TRUE;
 	if(progressHUD) {
 		[progressHUD hide];
-		[progressHUD release];
 		progressHUD = nil;
         
 	}
@@ -527,10 +518,6 @@
 
 
 - (void)dealloc {
-    [imageView release];
-    [viewShow release];
-    [_imageViewCrop release];
-    [super dealloc];
 }
 - (void)viewDidUnload {
     [self setImageView:nil];
