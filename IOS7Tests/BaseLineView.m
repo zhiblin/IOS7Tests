@@ -113,10 +113,11 @@
         
         UILabel *lable = [[UILabel alloc] initWithFrame:CGRectZero];
         lable.text = str;
-        lable.textColor = [UIColor whiteColor];
+        lable.textColor = [UIColor orangeColor];
+        lable.backgroundColor = [UIColor redColor];
         lable.textAlignment = 1;
         lable.font = [UIFont systemFontOfSize:12];
-        [self addSubview:lable];
+//        [self addSubview:lable];
         [_xAxisLbArr addObject:lable];
     }
 }

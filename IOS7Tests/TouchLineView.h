@@ -13,13 +13,7 @@
 
 @interface TouchLineView : BaseLineView{
     CAShapeLayer *chartLine;
-    CAShapeLayer *lastValueLine;
-    
-    UILabel *lastValueLeftLb;
-    UILabel *lastValueRightLb;
-    
     UILabel *touchValueLeftLb;
-    UILabel *touchValueRightLb;
     UILabel *touchxAxisLb;
     
     

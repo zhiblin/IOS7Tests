@@ -40,7 +40,7 @@
 
 -(void)kline{
     kMapView = [[KlineView alloc] init];
-    kMapView.frame = CGRectMake(0, 100, self.view.frame.size.width, 350);
+    kMapView.frame = CGRectMake(0, 100, self.view.frame.size.width, 200);
     kMapView.xAxisLbArr = @[@"1",@"11",@"111",@"1111",@"11111"];
     kMapView.yAxisLbArr = @[@"5",@"4",@"3",@"2",@"1"];
     kMapView.needToDrawRightAxisLb = NO;

@@ -50,12 +50,8 @@
         slenderLayer.lineWidth = 1;
         slenderLayer.strokeColor = [UIColor greenColor].CGColor;
         slenderLayer.path = path.CGPath;
-        
-        //        path = [UIBezierPath bezierPath];
-        NSLog(@"%f %f %f",width/2,(maxValue-startValue)*height,(maxValue - endValue)*height);
+//        NSLog(@"%f %f %f",width/2,(maxValue-startValue)*height,(maxValue - endValue)*height);
         path = [UIBezierPath bezierPathWithRoundedRect:CGRectMake(0, (maxValue-startValue)*height, width, ((maxValue - endValue)*height)-((maxValue-startValue)*height)) byRoundingCorners:UIRectCornerAllCorners cornerRadii:CGSizeMake(width/2, width/2)];
-        //        [path moveToPoint:CGPointMake(width/2, (maxValue-startValue)*height)];
-        //        [path addLineToPoint:CGPointMake(width/2, (maxValue - endValue)*height)];
         thickLayer.lineWidth = width;
         thickLayer.fillColor = [UIColor greenColor].CGColor;
         thickLayer.path = path.CGPath;

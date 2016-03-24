@@ -11,7 +11,6 @@
 @protocol KMapViewDataSource;
 @interface KlineView : TouchLineView{
     NSMutableArray *kMapPointArr;
-    NSMutableArray *linesArr;
     CGFloat offset;
 }
 
