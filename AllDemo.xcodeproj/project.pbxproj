@@ -59,6 +59,10 @@
 		F10B67D71CA1446B001B415C /* TouchLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = F10B67D61CA1446B001B415C /* TouchLineView.m */; };
 		F10B67DA1CA14645001B415C /* KlineView.m in Sources */ = {isa = PBXBuildFile; fileRef = F10B67D91CA14645001B415C /* KlineView.m */; };
 		F10B67DD1CA1466F001B415C /* KlineItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F10B67DC1CA1466F001B415C /* KlineItem.m */; };
+		F147E3351CA52D9D003B16C1 /* VibePattern.m in Sources */ = {isa = PBXBuildFile; fileRef = F147E3341CA52D9D003B16C1 /* VibePattern.m */; };
+		F147E3371CA52F40003B16C1 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F147E3361CA52F40003B16C1 /* AudioToolbox.framework */; };
+		F147E33A1CA53927003B16C1 /* UIWebView+Override.m in Sources */ = {isa = PBXBuildFile; fileRef = F147E3391CA53927003B16C1 /* UIWebView+Override.m */; };
+		F147E33D1CA539B5003B16C1 /* VibeQuick.m in Sources */ = {isa = PBXBuildFile; fileRef = F147E33B1CA539B5003B16C1 /* VibeQuick.m */; };
 		F1AABB051CA277F100A9784B /* Kitem.m in Sources */ = {isa = PBXBuildFile; fileRef = F1AABB041CA277F100A9784B /* Kitem.m */; };
 /* End PBXBuildFile section */
 
@@ -161,6 +165,13 @@
 		F10B67D91CA14645001B415C /* KlineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KlineView.m; sourceTree = "<group>"; };
 		F10B67DB1CA1466F001B415C /* KlineItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KlineItem.h; sourceTree = "<group>"; };
 		F10B67DC1CA1466F001B415C /* KlineItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KlineItem.m; sourceTree = "<group>"; };
+		F147E3331CA52D9D003B16C1 /* VibePattern.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VibePattern.h; sourceTree = "<group>"; };
+		F147E3341CA52D9D003B16C1 /* VibePattern.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VibePattern.m; sourceTree = "<group>"; };
+		F147E3361CA52F40003B16C1 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		F147E3381CA53927003B16C1 /* UIWebView+Override.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+Override.h"; sourceTree = "<group>"; };
+		F147E3391CA53927003B16C1 /* UIWebView+Override.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+Override.m"; sourceTree = "<group>"; };
+		F147E33B1CA539B5003B16C1 /* VibeQuick.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VibeQuick.m; sourceTree = "<group>"; };
+		F147E33C1CA539B5003B16C1 /* VibeQuick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VibeQuick.h; sourceTree = "<group>"; };
 		F1AABB031CA277F100A9784B /* Kitem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Kitem.h; sourceTree = "<group>"; };
 		F1AABB041CA277F100A9784B /* Kitem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Kitem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -170,6 +181,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F147E3371CA52F40003B16C1 /* AudioToolbox.framework in Frameworks */,
 				84ED36361AA5BC9E00AFEACB /* MobileCoreServices.framework in Frameworks */,
 				84ED36341AA5BC5B00AFEACB /* AVFoundation.framework in Frameworks */,
 				02EACA2A183EFC8500780D06 /* CoreGraphics.framework in Frameworks */,
@@ -204,6 +216,7 @@
 		02EACA26183EFC8500780D06 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F147E3361CA52F40003B16C1 /* AudioToolbox.framework */,
 				84ED36351AA5BC9E00AFEACB /* MobileCoreServices.framework */,
 				84ED36331AA5BC5B00AFEACB /* AVFoundation.framework */,
 				02EACA27183EFC8500780D06 /* Foundation.framework */,
@@ -218,6 +231,7 @@
 		02EACA2D183EFC8500780D06 /* IOS7Tests */ = {
 			isa = PBXGroup;
 			children = (
+				F147E3321CA52D4F003B16C1 /* vibrate */,
 				F1AABB021CA2777200A9784B /* Other */,
 				F1AABB011CA2775500A9784B /* NetData */,
 				F10B67D11CA13B75001B415C /* KLine */,
@@ -421,6 +435,19 @@
 			name = KLine;
 			sourceTree = "<group>";
 		};
+		F147E3321CA52D4F003B16C1 /* vibrate */ = {
+			isa = PBXGroup;
+			children = (
+				F147E33B1CA539B5003B16C1 /* VibeQuick.m */,
+				F147E33C1CA539B5003B16C1 /* VibeQuick.h */,
+				F147E3331CA52D9D003B16C1 /* VibePattern.h */,
+				F147E3341CA52D9D003B16C1 /* VibePattern.m */,
+				F147E3381CA53927003B16C1 /* UIWebView+Override.h */,
+				F147E3391CA53927003B16C1 /* UIWebView+Override.m */,
+			);
+			name = vibrate;
+			sourceTree = "<group>";
+		};
 		F1AABB011CA2775500A9784B /* NetData */ = {
 			isa = PBXGroup;
 			children = (
@@ -588,9 +615,12 @@
 				849E06441A8CB2D90012CBE6 /* CameraCountdownView.m in Sources */,
 				F10B67D71CA1446B001B415C /* TouchLineView.m in Sources */,
 				84EA332E1BEB57F400E89094 /* MTAlert.m in Sources */,
+				F147E3351CA52D9D003B16C1 /* VibePattern.m in Sources */,
 				84A9E5621BCDEE35007991DE /* CreateAlbumViewController.m in Sources */,
 				84BB73081A89ADC000D1DC66 /* POPAnimatableProperty+Masonry.m in Sources */,
+				F147E33A1CA53927003B16C1 /* UIWebView+Override.m in Sources */,
 				02EACA61183F014100780D06 /* TestSwipeToPopTwo.m in Sources */,
+				F147E33D1CA539B5003B16C1 /* VibeQuick.m in Sources */,
 				F10B67D41CA13BAD001B415C /* BaseLineView.m in Sources */,
 				84B3D3151B9D80F4006175FD /* AdDataModel.m in Sources */,
 				84EA33321BEB585A00E89094 /* MainViewController.m in Sources */,

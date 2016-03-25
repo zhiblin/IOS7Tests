@@ -9,7 +9,8 @@
 #import "MainViewController.h"
 #import "MTAlertViewController.h"
 #import "KlineView.h"
-
+#import "VibePattern.h"
+#import "VibeQuick.h"
 @interface MainViewController()<KMapViewDataSource,TSLinesViewDelegate> {
     KlineView *kMapView;
     
@@ -31,10 +32,13 @@
 
 @synthesize beforeData,afterData;
 
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor blackColor];
-    [self kline];
+//    [self kline];
+    [self something];
     
 }
 
@@ -119,7 +123,10 @@
 
 
 
-
+-(void)vibrate{
+    vibeObject *v = [vibeObject new];
+    [v vibrate];
+}
 
 
 -(void)something{
@@ -128,31 +135,31 @@
     
     [butt setFrame:CGRectMake(60, 100, 120, 100)];
     [butt setTitle:@"Alert  " forState:UIControlStateNormal];
-    [butt addTarget:self action:@selector(ok) forControlEvents:UIControlEventTouchUpInside];
+    [butt addTarget:self action:@selector(vibrate) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:butt];
-    beforeData = [NSMutableArray new];
-    afterData = [NSMutableArray new];
-    for (int i = 0; i< 10; i++) {
-        [beforeData addObject:[NSString stringWithFormat:@"%i",i]];
-    }
-    afterData = [beforeData mutableCopy];
-    
-    for (NSString *i in afterData) {
-        NSLog(@"aa%@",i);
-    }
-    for (NSString *i in beforeData) {
-        NSLog(@"bbb%@",i);
-    }
-    
-    [afterData removeObject:@"2"];
-    [afterData addObject:@"11"];
-    
-    for (NSString *i in afterData) {
-        NSLog(@"aa%@",i);
-    }
-    for (NSString *i in beforeData) {
-        NSLog(@"bbb%@",i);
-    }
+//    beforeData = [NSMutableArray new];
+//    afterData = [NSMutableArray new];
+//    for (int i = 0; i< 10; i++) {
+//        [beforeData addObject:[NSString stringWithFormat:@"%i",i]];
+//    }
+//    afterData = [beforeData mutableCopy];
+//    
+//    for (NSString *i in afterData) {
+//        NSLog(@"aa%@",i);
+//    }
+//    for (NSString *i in beforeData) {
+//        NSLog(@"bbb%@",i);
+//    }
+//    
+//    [afterData removeObject:@"2"];
+//    [afterData addObject:@"11"];
+//    
+//    for (NSString *i in afterData) {
+//        NSLog(@"aa%@",i);
+//    }
+//    for (NSString *i in beforeData) {
+//        NSLog(@"bbb%@",i);
+//    }
 }
 
 -(void)gi{
