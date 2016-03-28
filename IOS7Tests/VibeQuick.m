@@ -15,29 +15,32 @@ void AudioServicesPlaySystemSoundWithVibration(int, id, NSDictionary *);
 
 @implementation vibeObject;
 
-- (void)vibrate
+- (void)vibrate:(CGFloat) intensity andTime:(int)time
 {
-    [self test];
-//    AudioServicesStopSystemSound(kSystemSoundID_Vibrate);
-//    
-//    int64_t vibrationLength = 30;
-//    
-//    NSArray *pattern = @[@NO, @0, @YES, @(vibrationLength)];
-//    
-//    NSMutableDictionary *dictionary = [NSMutableDictionary dictionary];
-//    dictionary[@"VibePattern"] = pattern;
-//    dictionary[@"Intensity"] = @1;
-//    
-//    AudioServicesPlaySystemSoundWithVibration(kSystemSoundID_Vibrate, nil, dictionary);
+    [self test:intensity andTime:time];
+    /*
+    AudioServicesStopSystemSound(kSystemSoundID_Vibrate);
+    
+    int64_t vibrationLength = 300;
+    
+    NSArray *pattern = @[@NO, @0, @YES, @(vibrationLength)];
+    
+    NSMutableDictionary *dictionary = [NSMutableDictionary dictionary];
+    dictionary[@"VibePattern"] = pattern;
+    dictionary[@"Intensity"] = @1;
+    
+    AudioServicesPlaySystemSoundWithVibration(kSystemSoundID_Vibrate, nil, dictionary);
+     */
 }
 
--(void)test{
+-(void)test:(CGFloat)intensity andTime:(int)time{
+    
     NSMutableDictionary* dict = [NSMutableDictionary dictionary];
     NSMutableArray* arr = [NSMutableArray array ];
     
     [arr addObject:[NSNumber numberWithBool:YES]]; //vibrate for 2000ms
-    [arr addObject:[NSNumber numberWithInt:2000]];
-    
+    [arr addObject:[NSNumber numberWithInt:time]];
+    /*
     [arr addObject:[NSNumber numberWithBool:NO]];  //stop for 1000ms
     [arr addObject:[NSNumber numberWithInt:1000]];
     
@@ -46,10 +49,23 @@ void AudioServicesPlaySystemSoundWithVibration(int, id, NSDictionary *);
     
     [arr addObject:[NSNumber numberWithBool:NO]];    //stop for 500ms
     [arr addObject:[NSNumber numberWithInt:500]];
-    
+    */
     [dict setObject:arr forKey:@"VibePattern"];
-    [dict setObject:[NSNumber numberWithInt:1] forKey:@"Intensity"];
+    [dict setObject:[NSNumber numberWithFloat:intensity] forKey:@"Intensity"];
+//    NSString *m = [NSString stringWithFormat:@"%@%@%@",@"AudioServicesPl",@"aySystemSoun",@"dWithVibration"];
+//    SEL v = NSSelectorFromString(m);
+//    if([object　respondsToSelector:v])
+//   {
+//       [object　performSelector:sel　withObject: @"test" ]; //如果有两个参数,使用两个withObject:参数;
+//    }
     AudioServicesPlaySystemSoundWithVibration(4095,nil,dict);
+    
 }
+
+
+-(void)stop{
+    AudioServicesStopSystemSound(kSystemSoundID_Vibrate);
+}
+
 
 @end

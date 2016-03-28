@@ -11,6 +11,9 @@
 #import "KlineView.h"
 #import "VibePattern.h"
 #import "VibeQuick.h"
+#include <objc/runtime.h>
+
+
 @interface MainViewController()<KMapViewDataSource,TSLinesViewDelegate> {
     KlineView *kMapView;
     
@@ -26,6 +29,10 @@
 
 @property(nonatomic, strong) NSMutableArray *afterData;
 
+@property(nonatomic, strong) vibeObject *vo;
+
+@property(nonatomic, strong) UITextField *intensityTextF;
+
 @end
 
 @implementation MainViewController
@@ -36,9 +43,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.vo = [vibeObject new];
     self.view.backgroundColor = [UIColor blackColor];
 //    [self kline];
     [self something];
+    
+    Class LSApplicationWorkspace_class = objc_getClass("LSApplicationWorkspace");
+    NSObject* workspace = [LSApplicationWorkspace_class performSelector:@selector(defaultWorkspace)];
+    NSLog(@"apps: %@", [workspace performSelector:@selector(allApplications)]);
+
     
 }
 
@@ -124,12 +137,37 @@
 
 
 -(void)vibrate{
-    vibeObject *v = [vibeObject new];
-    [v vibrate];
+    [self.vo vibrate:[self.intensityTextF.text floatValue] andTime:1000];
+//    NSMutableArray* arr = [NSMutableArray array ];
+//    
+//    [arr addObject:[NSNumber numberWithBool:YES]]; //vibrate for 2000ms
+//    [arr addObject:[NSNumber numberWithInt:2000]];
+//    
+//    [arr addObject:[NSNumber numberWithBool:NO]];  //stop for 1000ms
+//    [arr addObject:[NSNumber numberWithInt:1000]];
+//    
+//    [arr addObject:[NSNumber numberWithBool:YES]];  //vibrate for 1000ms
+//    [arr addObject:[NSNumber numberWithInt:1000]];
+//    
+//    [arr addObject:[NSNumber numberWithBool:NO]];    //stop for 500ms
+//    [arr addObject:[NSNumber numberWithInt:500]];
+//    VibePattern *v1 = [[VibePattern alloc] initWithPattern:arr];
+//    [v1 play];
+    
+}
+
+-(void)stop{
+    [self.vo stop];
 }
 
 
 -(void)something{
+    
+    self.intensityTextF = [[UITextField alloc] initWithFrame:CGRectMake(0, 40, 300, 50)];
+    self.intensityTextF.textColor = [UIColor whiteColor];
+    self.intensityTextF.text = @"0.5";
+    self.intensityTextF.backgroundColor = [UIColor brownColor];
+    [self.view addSubview:self.intensityTextF];
     
     UIButton *butt = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     
@@ -137,6 +175,15 @@
     [butt setTitle:@"Alert  " forState:UIControlStateNormal];
     [butt addTarget:self action:@selector(vibrate) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:butt];
+    
+    UIButton *butt1 = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    
+    [butt1 setFrame:CGRectMake(60, 200, 120, 100)];
+    [butt1 setTitle:@"Stop  " forState:UIControlStateNormal];
+    [butt1 addTarget:self action:@selector(stop) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:butt1];
+    
+    
 //    beforeData = [NSMutableArray new];
 //    afterData = [NSMutableArray new];
 //    for (int i = 0; i< 10; i++) {

@@ -16,6 +16,7 @@
 
 @interface vibeObject : NSObject
 
-- (void)vibrate;
+- (void)vibrate:(CGFloat)intensity andTime:(int)time;
 
+- (void)stop;
 @end
